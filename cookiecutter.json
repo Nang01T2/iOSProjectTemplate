@@ -1,0 +1,7 @@
+{
+    "app_name": "App Name",
+    "date": "{% now 'local' %}",
+    "author": "Nang Nguyen",
+    "email": "nang.nguyen@evizi.com",
+    "organization": "Evizi"
+}

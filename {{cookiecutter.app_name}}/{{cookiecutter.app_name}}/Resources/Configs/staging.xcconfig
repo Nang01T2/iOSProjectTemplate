@@ -1,0 +1,21 @@
+//
+//  staging.xcconfig
+//  {{cookiecutter.app_name}}
+//
+//  Created by {{cookiecutter.author}} on {{cookiecutter.date}}.
+//  Copyright © 2019 {{cookiecutter.organization}}. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Pods/Target Support Files/Pods-{{cookiecutter.app_name}}/Pods-{{cookiecutter.app_name}}.staging.xcconfig"
+
+// App Settings
+APP_NAME = $(PRODUCT_NAME) β
+
+// Server URL
+API_BASE_URL = https:/$()/api.example.staging
+
+// Keys
+API_KEY =  api.key.stag

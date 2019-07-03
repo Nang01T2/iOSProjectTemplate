@@ -1,0 +1,21 @@
+//
+//  development.xcconfig
+//  {{cookiecutter.app_name}}
+//
+//  Created by {{cookiecutter.author}} on {{cookiecutter.date}}.
+//  Copyright © 2019 {{cookiecutter.organization}}. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Pods/Target Support Files/Pods-{{cookiecutter.app_name}}/Pods-{{cookiecutter.app_name}}.development.xcconfig"
+
+// App Settings
+APP_NAME = $(PRODUCT_NAME) α
+
+// Server URL
+API_BASE_URL = https:/$()/api.example.development
+
+// Keys
+API_KEY = api.key.dev
