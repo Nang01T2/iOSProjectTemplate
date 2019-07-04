@@ -5,6 +5,9 @@ source 'https://github.com/CocoaPods/Specs.git'
 #source 'https://github.com/Nang01T2/pods-spec-ios.git'
 
 def shared
+  pod 'Swinject'
+  #pod 'SwinjectStoryboard'
+  pod 'SwinjectAutoregistration'
   pod 'KeychainAccess'
   pod 'HttpClient', :git => 'https://github.com/Nang01T2/HttpClient.git'
 end

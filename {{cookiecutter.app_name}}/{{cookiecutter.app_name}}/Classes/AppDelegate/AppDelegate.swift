@@ -7,44 +7,24 @@
 //
 
 import UIKit
+import Swinject
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: AppDelegateManager {
 
     var window: UIWindow?
-    let appDelegate = AppDelegateFactory.makeDefault()
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        _ = appDelegate.application?(application, didFinishLaunchingWithOptions: launchOptions)
-        return true
-    }
-
-    func applicationWillResignActive(_ application: UIApplication) {
-        appDelegate.applicationWillResignActive?(application)
-    }
-
-    func applicationDidEnterBackground(_ application: UIApplication) {
-        appDelegate.applicationDidEnterBackground?(application)
-    }
-
-    func applicationWillEnterForeground(_ application: UIApplication) {
-        appDelegate.applicationWillEnterForeground?(application)
-    }
-
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        appDelegate.applicationDidBecomeActive?(application)
-    }
-
-    func applicationWillTerminate(_ application: UIApplication) {
-        appDelegate.applicationWillTerminate?(application)
-    }
-
-    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        appDelegate.application?(application, didRegisterForRemoteNotificationsWithDeviceToken: deviceToken)
-    }
+    lazy var container : Container = {
+        let container = Container()
+        container.register(AppCoordinatorAssembly.self) { _ in AppCoordinatorAssembly(container: container) }
+        return container
+    }()
     
-    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
-        appDelegate.application?(application, didFailToRegisterForRemoteNotificationsWithError: error)
+    override var appDelegates: [AppDelegateType] {
+        return [
+            LaunchAppDelegate(container: container, window: window),
+            PushNotificationsAppDelegate(),
+            ThirdPartiesConfigurationAppDelegate()
+        ]
     }
 
 }

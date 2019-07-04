@@ -7,30 +7,47 @@
 //
 
 import UIKit
+import Swinject
 
-open class BaseCoordinator : NSObject, Coordinator {
+class BaseCoordinator : NSObject, Coordinator {
     
     // MARK: Vars and Lets
-    public var childCoordinators : [Coordinator] = []
-    public var router: Router
-    public var finishFlow: (() -> Void)?
+    var childCoordinators : [Coordinator] = []
+    var finishFlow: (() -> Void)?
 
+    let router: Router
+    let container: Container
+    
     // MARK: - Init
-    public init(router: Router) {
+    init(container: Container, router: Router) {
         self.router = router
+        self.container = container
     }
     
     // MARK: - Coordinator
     
-    open func start() {
+    func start() {
         start(with: nil)
     }
     
-    open func start(with option: DeepLinkOption?) {
+    func start(with option: DeepLinkOption?) {
         fatalError("Children should implement `start`.")
     }
     
     func toPresent() -> UIViewController? {
         return router.toPresent()
+    }
+    
+    // MARK - Helpers
+    func addChild(_ coordinator: Coordinator) {
+        for element in childCoordinators {
+            if element === coordinator { return }
+        }
+        childCoordinators.append(coordinator)
+    }
+    
+    func removeChild(_ coordinator: Coordinator?) {
+        guard childCoordinators.isEmpty == false, let coordinator = coordinator else { return }
+        childCoordinators = childCoordinators.filter { $0 !== coordinator }
     }
 }

@@ -12,12 +12,11 @@ typealias AppDelegateType = UIResponder & UIApplicationDelegate
 
 class AppDelegateManager: AppDelegateType {
     
-    private let appDelegates: [AppDelegateType]
+    var appDelegates: [AppDelegateType] { return [] }
     
-    init(appDelegates: [AppDelegateType]) {
-        self.appDelegates = appDelegates
-    }
-    
+}
+
+extension AppDelegateManager {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         appDelegates.forEach { _ = $0.application?(application, didFinishLaunchingWithOptions: launchOptions) }
@@ -53,5 +52,9 @@ class AppDelegateManager: AppDelegateType {
     
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         appDelegates.forEach { _ = $0.application?(application, didRegisterForRemoteNotificationsWithDeviceToken: deviceToken) }
+    }
+    
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        appDelegates.forEach { _ = $0.application?(application, didFailToRegisterForRemoteNotificationsWithError: error) }
     }
 }

@@ -10,20 +10,20 @@
 		5BF13648B237CD0C2A6C1507 /* Pods___cookiecutter_app_name_____cookiecutter_app_name__Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F0319BC5B279BBF78E2C8F8 /* Pods___cookiecutter_app_name_____cookiecutter_app_name__Tests.framework */; };
 		5C10286B22CC4D7600A4F16F /* AppDelegateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C10286A22CC4D7600A4F16F /* AppDelegateManager.swift */; };
 		5C10286D22CC546000A4F16F /* PushNotificationsAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C10286C22CC546000A4F16F /* PushNotificationsAppDelegate.swift */; };
-		5C10286F22CC54BA00A4F16F /* LaunchConfigurationAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C10286E22CC54BA00A4F16F /* LaunchConfigurationAppDelegate.swift */; };
+		5C10286F22CC54BA00A4F16F /* LaunchAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C10286E22CC54BA00A4F16F /* LaunchAppDelegate.swift */; };
 		5C10287122CC554400A4F16F /* ThirdPartiesConfigurationAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C10287022CC554400A4F16F /* ThirdPartiesConfigurationAppDelegate.swift */; };
-		5C10287322CC55A200A4F16F /* AppDelegateFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C10287222CC55A200A4F16F /* AppDelegateFactory.swift */; };
 		5C10287822CC5E4900A4F16F /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C10287722CC5E4900A4F16F /* Presentable.swift */; };
 		5C10287C22CC5F7F00A4F16F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C10287B22CC5F7F00A4F16F /* Router.swift */; };
 		5C10287E22CC604700A4F16F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C10287D22CC604700A4F16F /* Coordinator.swift */; };
 		5C10288122CC608500A4F16F /* DeepLinkOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C10288022CC608500A4F16F /* DeepLinkOption.swift */; };
 		5C10288322CC60D300A4F16F /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C10288222CC60D300A4F16F /* BaseCoordinator.swift */; };
 		5C12D5F622C9EBA0009CE7E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C12D5F522C9EBA0009CE7E2 /* AppDelegate.swift */; };
-		5C12D5F822C9EBA0009CE7E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C12D5F722C9EBA0009CE7E2 /* ViewController.swift */; };
-		5C12D5FB22C9EBA0009CE7E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C12D5F922C9EBA0009CE7E2 /* Main.storyboard */; };
 		5C12D5FD22C9EBAB009CE7E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C12D5FC22C9EBAB009CE7E2 /* Assets.xcassets */; };
 		5C12D60022C9EBAB009CE7E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C12D5FE22C9EBAB009CE7E2 /* LaunchScreen.storyboard */; };
 		5C12D60B22C9EBAB009CE7E2 /* __cookiecutter_app_name__Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C12D60A22C9EBAB009CE7E2 /* __cookiecutter_app_name__Tests.swift */; };
+		5CA2551A22CE556F0030D30B /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2551922CE556F0030D30B /* AppCoordinator.swift */; };
+		5CA2551D22CE5EC80030D30B /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2551C22CE5EC80030D30B /* Assembly.swift */; };
+		5CA2552222CE60CD0030D30B /* AppCoordinatorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2552122CE60CD0030D30B /* AppCoordinatorAssembly.swift */; };
 		5CD8E18C22CAFF2F008E142C /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD8E18B22CAFF2F008E142C /* Configuration.swift */; };
 		5CD8E18E22CB0395008E142C /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD8E18D22CB0395008E142C /* Environment.swift */; };
 		F8727BA5422F17E934C1C80C /* Pods___cookiecutter_app_name__.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FEF9997B08DF7494E2A4A2 /* Pods___cookiecutter_app_name__.framework */; };
@@ -48,9 +48,8 @@
 		32884BE2BF2731E487ECC9B2 /* Pods-{{cookiecutter.app_name}}-{{cookiecutter.app_name}}Tests.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-{{cookiecutter.app_name}}-{{cookiecutter.app_name}}Tests.production.xcconfig"; path = "Target Support Files/Pods-{{cookiecutter.app_name}}-{{cookiecutter.app_name}}Tests/Pods-{{cookiecutter.app_name}}-{{cookiecutter.app_name}}Tests.production.xcconfig"; sourceTree = "<group>"; };
 		5C10286A22CC4D7600A4F16F /* AppDelegateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateManager.swift; sourceTree = "<group>"; };
 		5C10286C22CC546000A4F16F /* PushNotificationsAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationsAppDelegate.swift; sourceTree = "<group>"; };
-		5C10286E22CC54BA00A4F16F /* LaunchConfigurationAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchConfigurationAppDelegate.swift; sourceTree = "<group>"; };
+		5C10286E22CC54BA00A4F16F /* LaunchAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchAppDelegate.swift; sourceTree = "<group>"; };
 		5C10287022CC554400A4F16F /* ThirdPartiesConfigurationAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPartiesConfigurationAppDelegate.swift; sourceTree = "<group>"; };
-		5C10287222CC55A200A4F16F /* AppDelegateFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateFactory.swift; sourceTree = "<group>"; };
 		5C10287722CC5E4900A4F16F /* Presentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
 		5C10287B22CC5F7F00A4F16F /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		5C10287D22CC604700A4F16F /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -58,8 +57,6 @@
 		5C10288222CC60D300A4F16F /* BaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		5C12D5F222C9EBA0009CE7E2 /* {{cookiecutter.app_name}}.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "{{cookiecutter.app_name}}.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C12D5F522C9EBA0009CE7E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5C12D5F722C9EBA0009CE7E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5C12D5FA22C9EBA0009CE7E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C12D5FC22C9EBAB009CE7E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C12D5FF22C9EBAB009CE7E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C12D60122C9EBAB009CE7E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,6 +66,9 @@
 		5C12D61922C9F985009CE7E2 /* development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = development.xcconfig; sourceTree = "<group>"; };
 		5C12D61A22C9F996009CE7E2 /* staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = staging.xcconfig; sourceTree = "<group>"; };
 		5C12D61B22C9F9A6009CE7E2 /* production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = production.xcconfig; sourceTree = "<group>"; };
+		5CA2551922CE556F0030D30B /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		5CA2551C22CE5EC80030D30B /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
+		5CA2552122CE60CD0030D30B /* AppCoordinatorAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorAssembly.swift; sourceTree = "<group>"; };
 		5CD8E18B22CAFF2F008E142C /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		5CD8E18D22CB0395008E142C /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		8F0319BC5B279BBF78E2C8F8 /* Pods___cookiecutter_app_name_____cookiecutter_app_name__Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods___cookiecutter_app_name_____cookiecutter_app_name__Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				5C10286922CC4BFB00A4F16F /* AppDelegate */,
+				5CA2551E22CE602F0030D30B /* Assemblys */,
 				5C12D61822C9F791009CE7E2 /* Configs */,
 				5C10286722CC4B9500A4F16F /* Core */,
 			);
@@ -118,6 +119,7 @@
 		5C10286722CC4B9500A4F16F /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				5CA2551B22CE5EA00030D30B /* Assembly */,
 				5C10287522CC5D8900A4F16F /* AppDelegate */,
 				5C10287922CC5EDA00A4F16F /* Coordinator */,
 				5C10287F22CC606800A4F16F /* Deeplink */,
@@ -131,10 +133,9 @@
 			isa = PBXGroup;
 			children = (
 				5C12D5F522C9EBA0009CE7E2 /* AppDelegate.swift */,
-				5C10286E22CC54BA00A4F16F /* LaunchConfigurationAppDelegate.swift */,
+				5C10286E22CC54BA00A4F16F /* LaunchAppDelegate.swift */,
 				5C10286C22CC546000A4F16F /* PushNotificationsAppDelegate.swift */,
 				5C10287022CC554400A4F16F /* ThirdPartiesConfigurationAppDelegate.swift */,
-				5C10287222CC55A200A4F16F /* AppDelegateFactory.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -201,7 +202,6 @@
 		5C10288622CC62CD00A4F16F /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				5C12D5F922C9EBA0009CE7E2 /* Main.storyboard */,
 				5C12D5FE22C9EBAB009CE7E2 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
@@ -233,7 +233,6 @@
 				5C10286622CC48F900A4F16F /* Classes */,
 				5C10286522CC48D100A4F16F /* Resources */,
 				5C10288422CC628900A4F16F /* Supporting Files */,
-				5C12D5F722C9EBA0009CE7E2 /* ViewController.swift */,
 			);
 			path = "{{cookiecutter.app_name}}";
 			sourceTree = "<group>";
@@ -254,6 +253,55 @@
 				5CD8E18D22CB0395008E142C /* Environment.swift */,
 			);
 			path = Configs;
+			sourceTree = "<group>";
+		};
+		5CA2551722CE54790030D30B /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				5CA2551822CE548B0030D30B /* Debug */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		5CA2551822CE548B0030D30B /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		5CA2551B22CE5EA00030D30B /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				5CA2551C22CE5EC80030D30B /* Assembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		5CA2551E22CE602F0030D30B /* Assemblys */ = {
+			isa = PBXGroup;
+			children = (
+				5CA2551F22CE60740030D30B /* Coordinators */,
+				5CA2551722CE54790030D30B /* Flows */,
+			);
+			path = Assemblys;
+			sourceTree = "<group>";
+		};
+		5CA2551F22CE60740030D30B /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				5CA2552022CE609F0030D30B /* AppCoordinator */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		5CA2552022CE609F0030D30B /* AppCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				5CA2551922CE556F0030D30B /* AppCoordinator.swift */,
+				5CA2552122CE60CD0030D30B /* AppCoordinatorAssembly.swift */,
+			);
+			path = AppCoordinator;
 			sourceTree = "<group>";
 		};
 		A261945188EBE895D6FCFFF6 /* Frameworks */ = {
@@ -365,7 +413,6 @@
 			files = (
 				5C12D60022C9EBAB009CE7E2 /* LaunchScreen.storyboard in Resources */,
 				5C12D5FD22C9EBAB009CE7E2 /* Assets.xcassets in Resources */,
-				5C12D5FB22C9EBA0009CE7E2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,14 +517,15 @@
 				5CD8E18E22CB0395008E142C /* Environment.swift in Sources */,
 				5C10288122CC608500A4F16F /* DeepLinkOption.swift in Sources */,
 				5C10287822CC5E4900A4F16F /* Presentable.swift in Sources */,
-				5C10286F22CC54BA00A4F16F /* LaunchConfigurationAppDelegate.swift in Sources */,
+				5CA2551A22CE556F0030D30B /* AppCoordinator.swift in Sources */,
+				5C10286F22CC54BA00A4F16F /* LaunchAppDelegate.swift in Sources */,
 				5C10287122CC554400A4F16F /* ThirdPartiesConfigurationAppDelegate.swift in Sources */,
 				5C10286B22CC4D7600A4F16F /* AppDelegateManager.swift in Sources */,
+				5CA2551D22CE5EC80030D30B /* Assembly.swift in Sources */,
 				5C10287E22CC604700A4F16F /* Coordinator.swift in Sources */,
-				5C12D5F822C9EBA0009CE7E2 /* ViewController.swift in Sources */,
+				5CA2552222CE60CD0030D30B /* AppCoordinatorAssembly.swift in Sources */,
 				5C10288322CC60D300A4F16F /* BaseCoordinator.swift in Sources */,
 				5C12D5F622C9EBA0009CE7E2 /* AppDelegate.swift in Sources */,
-				5C10287322CC55A200A4F16F /* AppDelegateFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,14 +548,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5C12D5F922C9EBA0009CE7E2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5C12D5FA22C9EBA0009CE7E2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5C12D5FE22C9EBAB009CE7E2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
