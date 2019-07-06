@@ -5,10 +5,16 @@ source 'https://github.com/CocoaPods/Specs.git'
 #source 'https://github.com/Nang01T2/pods-spec-ios.git'
 
 def shared
+  # Utilities
+  pod 'SwifterSwift'
+  pod 'KeychainAccess'
+  
+  # DI library
   pod 'Swinject'
   #pod 'SwinjectStoryboard'
   pod 'SwinjectAutoregistration'
-  pod 'KeychainAccess'
+  
+  # Networking
   pod 'HttpClient', :git => 'https://github.com/Nang01T2/HttpClient.git'
 end
 

@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol Coordinator: class {
+protocol CoordinatorType: class {
     func start()
     func start(with option: DeepLinkOption?)
 }

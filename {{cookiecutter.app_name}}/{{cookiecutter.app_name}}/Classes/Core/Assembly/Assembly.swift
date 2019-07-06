@@ -16,3 +16,10 @@ class Assembly {
         self.container = container
     }
 }
+
+
+extension Container {
+    func registerAssembly<T: Assembly>(_ assembly: T.Type) {
+        self.register(assembly) { _ in assembly.init(container: self)}
+    }
+}

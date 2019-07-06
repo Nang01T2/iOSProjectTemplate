@@ -14,7 +14,7 @@ class LaunchAppDelegate: AppDelegateType {
     var window: UIWindow?
     let container: Container
     
-    lazy var appCoordinator: AppCoordinator = {
+    lazy var appCoordinator: AppCoordinatorType = {
         return container.resolve(AppCoordinatorAssembly.self)!.build()
     }()
     

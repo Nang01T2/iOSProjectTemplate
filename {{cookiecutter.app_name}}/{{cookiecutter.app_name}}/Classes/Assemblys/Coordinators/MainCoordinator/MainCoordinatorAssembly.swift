@@ -1,5 +1,5 @@
 //
-//  AppCoordinatorAssembly.swift
+//  MainCoordinatorAssembly.swift
 //  {{cookiecutter.app_name}}
 //
 //  Created by Nang Nguyen on 7/6/19
@@ -8,12 +8,12 @@
 
 import UIKit
 
-class AppCoordinatorAssembly: Assembly {
-    func build() -> AppCoordinatorType {
+class MainCoordinatorAssembly: Assembly {
+    func build() -> MainCoordinatorType {
         let navigationController = UINavigationController(rootViewController: UIViewController())
         let router = Router(navigationController: navigationController)
 
-        let coordinator = AppCoordinator(container: container, router: router)
+        let coordinator = MainCoordinator(container: container, router: router)
         return coordinator
     }
 }

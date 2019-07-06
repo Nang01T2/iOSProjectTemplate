@@ -14,18 +14,34 @@
 		5C10287122CC554400A4F16F /* ThirdPartiesConfigurationAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C10287022CC554400A4F16F /* ThirdPartiesConfigurationAppDelegate.swift */; };
 		5C10287822CC5E4900A4F16F /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C10287722CC5E4900A4F16F /* Presentable.swift */; };
 		5C10287C22CC5F7F00A4F16F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C10287B22CC5F7F00A4F16F /* Router.swift */; };
-		5C10287E22CC604700A4F16F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C10287D22CC604700A4F16F /* Coordinator.swift */; };
+		5C10287E22CC604700A4F16F /* CoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C10287D22CC604700A4F16F /* CoordinatorType.swift */; };
 		5C10288122CC608500A4F16F /* DeepLinkOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C10288022CC608500A4F16F /* DeepLinkOption.swift */; };
 		5C10288322CC60D300A4F16F /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C10288222CC60D300A4F16F /* BaseCoordinator.swift */; };
 		5C12D5F622C9EBA0009CE7E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C12D5F522C9EBA0009CE7E2 /* AppDelegate.swift */; };
 		5C12D5FD22C9EBAB009CE7E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C12D5FC22C9EBAB009CE7E2 /* Assets.xcassets */; };
 		5C12D60022C9EBAB009CE7E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C12D5FE22C9EBAB009CE7E2 /* LaunchScreen.storyboard */; };
 		5C12D60B22C9EBAB009CE7E2 /* __cookiecutter_app_name__Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C12D60A22C9EBAB009CE7E2 /* __cookiecutter_app_name__Tests.swift */; };
-		5CA2551A22CE556F0030D30B /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2551922CE556F0030D30B /* AppCoordinator.swift */; };
+		5C1EA28E22CF2B7100E4253D /* LaunchInstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1EA28D22CF2B7100E4253D /* LaunchInstructor.swift */; };
+		5C1EA29122CF30E100E4253D /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1EA29022CF30E100E4253D /* Module.swift */; };
+		5C1EA2CF22CF3DE600E4253D /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1EA2CE22CF3DE600E4253D /* Storyboarded.swift */; };
+		5C1EA2D422CF3EEE00E4253D /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C1EA2D022CF3EEE00E4253D /* Onboarding.storyboard */; };
+		5C1EA2D522CF3EEE00E4253D /* OnboardingContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1EA2D122CF3EEE00E4253D /* OnboardingContracts.swift */; };
+		5C1EA2D622CF3EEE00E4253D /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1EA2D222CF3EEE00E4253D /* OnboardingViewController.swift */; };
+		5C1EA2D722CF3EEE00E4253D /* OnboardingAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1EA2D322CF3EEE00E4253D /* OnboardingAssembly.swift */; };
+		5C9ACB2822D03CCD00B59620 /* MainCoordinatorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9ACB2522D03CCD00B59620 /* MainCoordinatorAssembly.swift */; };
+		5C9ACB2922D03CCD00B59620 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9ACB2622D03CCD00B59620 /* MainCoordinator.swift */; };
+		5C9ACB2A22D03CCD00B59620 /* MainCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9ACB2722D03CCD00B59620 /* MainCoordinatorType.swift */; };
+		5C9ACB3022D0418000B59620 /* AppCoordinatorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9ACB2D22D0418000B59620 /* AppCoordinatorAssembly.swift */; };
+		5C9ACB3122D0418000B59620 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9ACB2E22D0418000B59620 /* AppCoordinator.swift */; };
+		5C9ACB3222D0418000B59620 /* AppCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9ACB2F22D0418000B59620 /* AppCoordinatorType.swift */; };
+		5C9ACB3C22D0522100B59620 /* EnvironmentServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9ACB3922D0522100B59620 /* EnvironmentServiceAssembly.swift */; };
+		5C9ACB3D22D0522100B59620 /* EnvironmentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9ACB3A22D0522100B59620 /* EnvironmentService.swift */; };
+		5C9ACB3E22D0522100B59620 /* EnvironmentServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9ACB3B22D0522100B59620 /* EnvironmentServiceType.swift */; };
+		5C9ACB4422D0580200B59620 /* AppConfigServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9ACB4122D0580200B59620 /* AppConfigServiceAssembly.swift */; };
+		5C9ACB4522D0580200B59620 /* AppConfigService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9ACB4222D0580200B59620 /* AppConfigService.swift */; };
+		5C9ACB4622D0580200B59620 /* AppConfigServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9ACB4322D0580200B59620 /* AppConfigServiceType.swift */; };
 		5CA2551D22CE5EC80030D30B /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2551C22CE5EC80030D30B /* Assembly.swift */; };
-		5CA2552222CE60CD0030D30B /* AppCoordinatorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2552122CE60CD0030D30B /* AppCoordinatorAssembly.swift */; };
 		5CD8E18C22CAFF2F008E142C /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD8E18B22CAFF2F008E142C /* Configuration.swift */; };
-		5CD8E18E22CB0395008E142C /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD8E18D22CB0395008E142C /* Environment.swift */; };
 		F8727BA5422F17E934C1C80C /* Pods___cookiecutter_app_name__.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FEF9997B08DF7494E2A4A2 /* Pods___cookiecutter_app_name__.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,7 +68,7 @@
 		5C10287022CC554400A4F16F /* ThirdPartiesConfigurationAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPartiesConfigurationAppDelegate.swift; sourceTree = "<group>"; };
 		5C10287722CC5E4900A4F16F /* Presentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
 		5C10287B22CC5F7F00A4F16F /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		5C10287D22CC604700A4F16F /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		5C10287D22CC604700A4F16F /* CoordinatorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorType.swift; sourceTree = "<group>"; };
 		5C10288022CC608500A4F16F /* DeepLinkOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeepLinkOption.swift; sourceTree = "<group>"; };
 		5C10288222CC60D300A4F16F /* BaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		5C12D5F222C9EBA0009CE7E2 /* {{cookiecutter.app_name}}.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "{{cookiecutter.app_name}}.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,11 +82,27 @@
 		5C12D61922C9F985009CE7E2 /* development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = development.xcconfig; sourceTree = "<group>"; };
 		5C12D61A22C9F996009CE7E2 /* staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = staging.xcconfig; sourceTree = "<group>"; };
 		5C12D61B22C9F9A6009CE7E2 /* production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = production.xcconfig; sourceTree = "<group>"; };
-		5CA2551922CE556F0030D30B /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		5C1EA28D22CF2B7100E4253D /* LaunchInstructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchInstructor.swift; sourceTree = "<group>"; };
+		5C1EA29022CF30E100E4253D /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
+		5C1EA2CE22CF3DE600E4253D /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		5C1EA2D022CF3EEE00E4253D /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		5C1EA2D122CF3EEE00E4253D /* OnboardingContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContracts.swift; sourceTree = "<group>"; };
+		5C1EA2D222CF3EEE00E4253D /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		5C1EA2D322CF3EEE00E4253D /* OnboardingAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingAssembly.swift; sourceTree = "<group>"; };
+		5C9ACB2522D03CCD00B59620 /* MainCoordinatorAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinatorAssembly.swift; sourceTree = "<group>"; };
+		5C9ACB2622D03CCD00B59620 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		5C9ACB2722D03CCD00B59620 /* MainCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinatorType.swift; sourceTree = "<group>"; };
+		5C9ACB2D22D0418000B59620 /* AppCoordinatorAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorAssembly.swift; sourceTree = "<group>"; };
+		5C9ACB2E22D0418000B59620 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		5C9ACB2F22D0418000B59620 /* AppCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorType.swift; sourceTree = "<group>"; };
+		5C9ACB3922D0522100B59620 /* EnvironmentServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentServiceAssembly.swift; sourceTree = "<group>"; };
+		5C9ACB3A22D0522100B59620 /* EnvironmentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentService.swift; sourceTree = "<group>"; };
+		5C9ACB3B22D0522100B59620 /* EnvironmentServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentServiceType.swift; sourceTree = "<group>"; };
+		5C9ACB4122D0580200B59620 /* AppConfigServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigServiceAssembly.swift; sourceTree = "<group>"; };
+		5C9ACB4222D0580200B59620 /* AppConfigService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigService.swift; sourceTree = "<group>"; };
+		5C9ACB4322D0580200B59620 /* AppConfigServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigServiceType.swift; sourceTree = "<group>"; };
 		5CA2551C22CE5EC80030D30B /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
-		5CA2552122CE60CD0030D30B /* AppCoordinatorAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorAssembly.swift; sourceTree = "<group>"; };
 		5CD8E18B22CAFF2F008E142C /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
-		5CD8E18D22CB0395008E142C /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		8F0319BC5B279BBF78E2C8F8 /* Pods___cookiecutter_app_name_____cookiecutter_app_name__Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods___cookiecutter_app_name_____cookiecutter_app_name__Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E304A9DD4F769BFAE464AC3A /* Pods-{{cookiecutter.app_name}}.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-{{cookiecutter.app_name}}.development.xcconfig"; path = "Target Support Files/Pods-{{cookiecutter.app_name}}/Pods-{{cookiecutter.app_name}}.development.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,8 +142,8 @@
 			children = (
 				5C10286922CC4BFB00A4F16F /* AppDelegate */,
 				5CA2551E22CE602F0030D30B /* Assemblys */,
-				5C12D61822C9F791009CE7E2 /* Configs */,
 				5C10286722CC4B9500A4F16F /* Core */,
+				5C1EA2CC22CF3C2B00E4253D /* Extensions */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -119,6 +151,9 @@
 		5C10286722CC4B9500A4F16F /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				5C12D61822C9F791009CE7E2 /* Configs */,
+				5C1EA2CD22CF3DCA00E4253D /* Storyboard */,
+				5C1EA28F22CF30CA00E4253D /* Module */,
 				5CA2551B22CE5EA00030D30B /* Assembly */,
 				5C10287522CC5D8900A4F16F /* AppDelegate */,
 				5C10287922CC5EDA00A4F16F /* Coordinator */,
@@ -160,7 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				5C10288222CC60D300A4F16F /* BaseCoordinator.swift */,
-				5C10287D22CC604700A4F16F /* Coordinator.swift */,
+				5C10287D22CC604700A4F16F /* CoordinatorType.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -250,17 +285,90 @@
 			isa = PBXGroup;
 			children = (
 				5CD8E18B22CAFF2F008E142C /* Configuration.swift */,
-				5CD8E18D22CB0395008E142C /* Environment.swift */,
 			);
 			path = Configs;
 			sourceTree = "<group>";
 		};
-		5CA2551722CE54790030D30B /* Flows */ = {
+		5C1EA28F22CF30CA00E4253D /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				5C1EA29022CF30E100E4253D /* Module.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		5C1EA2AF22CF381B00E4253D /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				5C1EA2D022CF3EEE00E4253D /* Onboarding.storyboard */,
+				5C1EA2D122CF3EEE00E4253D /* OnboardingContracts.swift */,
+				5C1EA2D222CF3EEE00E4253D /* OnboardingViewController.swift */,
+				5C1EA2D322CF3EEE00E4253D /* OnboardingAssembly.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		5C1EA2CC22CF3C2B00E4253D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5C1EA2CD22CF3DCA00E4253D /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5C1EA2CE22CF3DE600E4253D /* Storyboarded.swift */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		5C9ACB1722D037C100B59620 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5C9ACB4022D057DF00B59620 /* AppConfig */,
+				5C9ACB3F22D0546300B59620 /* Environment */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5C9ACB1822D03B1200B59620 /* MainCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				5C9ACB2622D03CCD00B59620 /* MainCoordinator.swift */,
+				5C9ACB2522D03CCD00B59620 /* MainCoordinatorAssembly.swift */,
+				5C9ACB2722D03CCD00B59620 /* MainCoordinatorType.swift */,
+			);
+			path = MainCoordinator;
+			sourceTree = "<group>";
+		};
+		5C9ACB3F22D0546300B59620 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				5C9ACB3A22D0522100B59620 /* EnvironmentService.swift */,
+				5C9ACB3922D0522100B59620 /* EnvironmentServiceAssembly.swift */,
+				5C9ACB3B22D0522100B59620 /* EnvironmentServiceType.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		5C9ACB4022D057DF00B59620 /* AppConfig */ = {
+			isa = PBXGroup;
+			children = (
+				5C9ACB4122D0580200B59620 /* AppConfigServiceAssembly.swift */,
+				5C9ACB4222D0580200B59620 /* AppConfigService.swift */,
+				5C9ACB4322D0580200B59620 /* AppConfigServiceType.swift */,
+			);
+			path = AppConfig;
+			sourceTree = "<group>";
+		};
+		5CA2551722CE54790030D30B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				5C1EA2AF22CF381B00E4253D /* Onboarding */,
 				5CA2551822CE548B0030D30B /* Debug */,
 			);
-			path = Flows;
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		5CA2551822CE548B0030D30B /* Debug */ = {
@@ -282,7 +390,8 @@
 			isa = PBXGroup;
 			children = (
 				5CA2551F22CE60740030D30B /* Coordinators */,
-				5CA2551722CE54790030D30B /* Flows */,
+				5CA2551722CE54790030D30B /* Modules */,
+				5C9ACB1722D037C100B59620 /* Services */,
 			);
 			path = Assemblys;
 			sourceTree = "<group>";
@@ -290,6 +399,7 @@
 		5CA2551F22CE60740030D30B /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				5C9ACB1822D03B1200B59620 /* MainCoordinator */,
 				5CA2552022CE609F0030D30B /* AppCoordinator */,
 			);
 			path = Coordinators;
@@ -298,8 +408,10 @@
 		5CA2552022CE609F0030D30B /* AppCoordinator */ = {
 			isa = PBXGroup;
 			children = (
-				5CA2551922CE556F0030D30B /* AppCoordinator.swift */,
-				5CA2552122CE60CD0030D30B /* AppCoordinatorAssembly.swift */,
+				5C9ACB2E22D0418000B59620 /* AppCoordinator.swift */,
+				5C9ACB2D22D0418000B59620 /* AppCoordinatorAssembly.swift */,
+				5C9ACB2F22D0418000B59620 /* AppCoordinatorType.swift */,
+				5C1EA28D22CF2B7100E4253D /* LaunchInstructor.swift */,
 			);
 			path = AppCoordinator;
 			sourceTree = "<group>";
@@ -411,6 +523,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C1EA2D422CF3EEE00E4253D /* Onboarding.storyboard in Resources */,
 				5C12D60022C9EBAB009CE7E2 /* LaunchScreen.storyboard in Resources */,
 				5C12D5FD22C9EBAB009CE7E2 /* Assets.xcassets in Resources */,
 			);
@@ -511,21 +624,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C1EA2D722CF3EEE00E4253D /* OnboardingAssembly.swift in Sources */,
 				5C10287C22CC5F7F00A4F16F /* Router.swift in Sources */,
+				5C9ACB3C22D0522100B59620 /* EnvironmentServiceAssembly.swift in Sources */,
+				5C9ACB3122D0418000B59620 /* AppCoordinator.swift in Sources */,
 				5CD8E18C22CAFF2F008E142C /* Configuration.swift in Sources */,
+				5C1EA29122CF30E100E4253D /* Module.swift in Sources */,
 				5C10286D22CC546000A4F16F /* PushNotificationsAppDelegate.swift in Sources */,
-				5CD8E18E22CB0395008E142C /* Environment.swift in Sources */,
+				5C9ACB2822D03CCD00B59620 /* MainCoordinatorAssembly.swift in Sources */,
+				5C1EA2D522CF3EEE00E4253D /* OnboardingContracts.swift in Sources */,
+				5C9ACB3D22D0522100B59620 /* EnvironmentService.swift in Sources */,
+				5C9ACB2922D03CCD00B59620 /* MainCoordinator.swift in Sources */,
+				5C9ACB3222D0418000B59620 /* AppCoordinatorType.swift in Sources */,
 				5C10288122CC608500A4F16F /* DeepLinkOption.swift in Sources */,
+				5C1EA2D622CF3EEE00E4253D /* OnboardingViewController.swift in Sources */,
 				5C10287822CC5E4900A4F16F /* Presentable.swift in Sources */,
-				5CA2551A22CE556F0030D30B /* AppCoordinator.swift in Sources */,
 				5C10286F22CC54BA00A4F16F /* LaunchAppDelegate.swift in Sources */,
 				5C10287122CC554400A4F16F /* ThirdPartiesConfigurationAppDelegate.swift in Sources */,
+				5C9ACB3E22D0522100B59620 /* EnvironmentServiceType.swift in Sources */,
+				5C9ACB4522D0580200B59620 /* AppConfigService.swift in Sources */,
+				5C9ACB2A22D03CCD00B59620 /* MainCoordinatorType.swift in Sources */,
+				5C1EA28E22CF2B7100E4253D /* LaunchInstructor.swift in Sources */,
+				5C9ACB4622D0580200B59620 /* AppConfigServiceType.swift in Sources */,
 				5C10286B22CC4D7600A4F16F /* AppDelegateManager.swift in Sources */,
 				5CA2551D22CE5EC80030D30B /* Assembly.swift in Sources */,
-				5C10287E22CC604700A4F16F /* Coordinator.swift in Sources */,
-				5CA2552222CE60CD0030D30B /* AppCoordinatorAssembly.swift in Sources */,
+				5C10287E22CC604700A4F16F /* CoordinatorType.swift in Sources */,
 				5C10288322CC60D300A4F16F /* BaseCoordinator.swift in Sources */,
 				5C12D5F622C9EBA0009CE7E2 /* AppDelegate.swift in Sources */,
+				5C9ACB4422D0580200B59620 /* AppConfigServiceAssembly.swift in Sources */,
+				5C1EA2CF22CF3DE600E4253D /* Storyboarded.swift in Sources */,
+				5C9ACB3022D0418000B59620 /* AppCoordinatorAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,10 +12,20 @@ import Swinject
 @UIApplicationMain
 class AppDelegate: AppDelegateManager {
 
-    var window: UIWindow?
+    var window: UIWindow? = UIWindow()
     lazy var container : Container = {
         let container = Container()
-        container.register(AppCoordinatorAssembly.self) { _ in AppCoordinatorAssembly(container: container) }
+        
+        // Setup coordinators
+        container.registerAssembly(AppCoordinatorAssembly.self)
+        
+        // Setup Modules
+        container.registerAssembly(OnboardingAssembly.self)
+        
+        // Setup services
+        container.registerAssembly(EnvironmentServiceAssembly.self)
+        container.registerAssembly(AppConfigServiceAssembly.self)
+        
         return container
     }()
     
@@ -28,4 +38,3 @@ class AppDelegate: AppDelegateManager {
     }
 
 }
-

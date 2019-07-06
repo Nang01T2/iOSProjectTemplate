@@ -9,10 +9,10 @@
 import UIKit
 import Swinject
 
-class BaseCoordinator : NSObject, Coordinator {
+class BaseCoordinator : NSObject, CoordinatorType, Presentable {
     
     // MARK: Vars and Lets
-    var childCoordinators : [Coordinator] = []
+    var childCoordinators : [CoordinatorType] = []
     var finishFlow: (() -> Void)?
 
     let router: Router
@@ -39,14 +39,14 @@ class BaseCoordinator : NSObject, Coordinator {
     }
     
     // MARK - Helpers
-    func addChild(_ coordinator: Coordinator) {
+    func addChild(_ coordinator: CoordinatorType) {
         for element in childCoordinators {
             if element === coordinator { return }
         }
         childCoordinators.append(coordinator)
     }
     
-    func removeChild(_ coordinator: Coordinator?) {
+    func removeChild(_ coordinator: CoordinatorType?) {
         guard childCoordinators.isEmpty == false, let coordinator = coordinator else { return }
         childCoordinators = childCoordinators.filter { $0 !== coordinator }
     }
