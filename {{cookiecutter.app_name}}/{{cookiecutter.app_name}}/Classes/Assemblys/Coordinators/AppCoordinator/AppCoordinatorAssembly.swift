@@ -2,13 +2,14 @@
 //  AppCoordinatorAssembly.swift
 //  {{cookiecutter.app_name}}
 //
-//  Created by Nang Nguyen on 7/6/19
+//  Created by {{cookiecutter.author}} on {{cookiecutter.date}}.
 //	Copyright © 2019 {{cookiecutter.organization}}. All rights reserved.
 //
 
 import UIKit
 
 class AppCoordinatorAssembly: Assembly {
+    
     func build() -> AppCoordinatorType {
         let navigationController = UINavigationController(rootViewController: UIViewController())
         let router = Router(navigationController: navigationController)
@@ -16,4 +17,5 @@ class AppCoordinatorAssembly: Assembly {
         let coordinator = AppCoordinator(container: container, router: router)
         return coordinator
     }
+    
 }

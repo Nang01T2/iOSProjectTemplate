@@ -18,9 +18,14 @@ class AppDelegate: AppDelegateManager {
         
         // Setup coordinators
         container.registerAssembly(AppCoordinatorAssembly.self)
+        container.registerAssembly(AuthCoordinatorAssembly.self)
+        container.registerAssembly(MainCoordinatorAssembly.self)
         
         // Setup Modules
+        container.registerAssembly(LoginAssembly.self)
+        container.registerAssembly(RegistrationAssembly.self)
         container.registerAssembly(OnboardingAssembly.self)
+        container.registerAssembly(MainAssembly.self)
         
         // Setup services
         container.registerAssembly(EnvironmentServiceAssembly.self)

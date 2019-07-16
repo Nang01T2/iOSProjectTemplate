@@ -26,4 +26,8 @@ extension AppConfigService {
         userDefaults[key.value] = value
         userDefaults.synchronize()
     }
+    
+    func registerDefaults() {
+        userDefaults.register(defaults: AppConfigKey.defaultValues)
+    }
 }

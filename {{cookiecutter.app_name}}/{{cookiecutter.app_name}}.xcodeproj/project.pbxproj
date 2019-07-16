@@ -28,6 +28,20 @@
 		5C1EA2D522CF3EEE00E4253D /* OnboardingContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1EA2D122CF3EEE00E4253D /* OnboardingContracts.swift */; };
 		5C1EA2D622CF3EEE00E4253D /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1EA2D222CF3EEE00E4253D /* OnboardingViewController.swift */; };
 		5C1EA2D722CF3EEE00E4253D /* OnboardingAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1EA2D322CF3EEE00E4253D /* OnboardingAssembly.swift */; };
+		5C2DBA3822DC364A001BF6F8 /* LoginContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2DBA3422DC364A001BF6F8 /* LoginContracts.swift */; };
+		5C2DBA3922DC364A001BF6F8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2DBA3522DC364A001BF6F8 /* LoginViewController.swift */; };
+		5C2DBA3A22DC364A001BF6F8 /* LoginAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2DBA3622DC364A001BF6F8 /* LoginAssembly.swift */; };
+		5C2DBA4022DC3661001BF6F8 /* RegistrationContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2DBA3C22DC3661001BF6F8 /* RegistrationContracts.swift */; };
+		5C2DBA4122DC3661001BF6F8 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2DBA3D22DC3661001BF6F8 /* RegistrationViewController.swift */; };
+		5C2DBA4222DC3661001BF6F8 /* RegistrationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2DBA3E22DC3661001BF6F8 /* RegistrationAssembly.swift */; };
+		5C2DBA4822DC37E0001BF6F8 /* AuthCoordinatorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2DBA4522DC37E0001BF6F8 /* AuthCoordinatorAssembly.swift */; };
+		5C2DBA4922DC37E0001BF6F8 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2DBA4622DC37E0001BF6F8 /* AuthCoordinator.swift */; };
+		5C2DBA4A22DC37E0001BF6F8 /* AuthCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2DBA4722DC37E0001BF6F8 /* AuthCoordinatorType.swift */; };
+		5C2DBA4D22DC82CD001BF6F8 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C2DBA4C22DC82CD001BF6F8 /* Authentication.storyboard */; };
+		5C8A5E9B22DD75F600884EF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C8A5E9722DD75F600884EF4 /* Main.storyboard */; };
+		5C8A5E9C22DD75F600884EF4 /* MainContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A5E9822DD75F600884EF4 /* MainContracts.swift */; };
+		5C8A5E9D22DD75F600884EF4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A5E9922DD75F600884EF4 /* MainViewController.swift */; };
+		5C8A5E9E22DD75F600884EF4 /* MainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A5E9A22DD75F600884EF4 /* MainAssembly.swift */; };
 		5C9ACB2822D03CCD00B59620 /* MainCoordinatorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9ACB2522D03CCD00B59620 /* MainCoordinatorAssembly.swift */; };
 		5C9ACB2922D03CCD00B59620 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9ACB2622D03CCD00B59620 /* MainCoordinator.swift */; };
 		5C9ACB2A22D03CCD00B59620 /* MainCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9ACB2722D03CCD00B59620 /* MainCoordinatorType.swift */; };
@@ -89,6 +103,20 @@
 		5C1EA2D122CF3EEE00E4253D /* OnboardingContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContracts.swift; sourceTree = "<group>"; };
 		5C1EA2D222CF3EEE00E4253D /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		5C1EA2D322CF3EEE00E4253D /* OnboardingAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingAssembly.swift; sourceTree = "<group>"; };
+		5C2DBA3422DC364A001BF6F8 /* LoginContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContracts.swift; sourceTree = "<group>"; };
+		5C2DBA3522DC364A001BF6F8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5C2DBA3622DC364A001BF6F8 /* LoginAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAssembly.swift; sourceTree = "<group>"; };
+		5C2DBA3C22DC3661001BF6F8 /* RegistrationContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationContracts.swift; sourceTree = "<group>"; };
+		5C2DBA3D22DC3661001BF6F8 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		5C2DBA3E22DC3661001BF6F8 /* RegistrationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationAssembly.swift; sourceTree = "<group>"; };
+		5C2DBA4522DC37E0001BF6F8 /* AuthCoordinatorAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinatorAssembly.swift; sourceTree = "<group>"; };
+		5C2DBA4622DC37E0001BF6F8 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		5C2DBA4722DC37E0001BF6F8 /* AuthCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinatorType.swift; sourceTree = "<group>"; };
+		5C2DBA4C22DC82CD001BF6F8 /* Authentication.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
+		5C8A5E9722DD75F600884EF4 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		5C8A5E9822DD75F600884EF4 /* MainContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContracts.swift; sourceTree = "<group>"; };
+		5C8A5E9922DD75F600884EF4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		5C8A5E9A22DD75F600884EF4 /* MainAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembly.swift; sourceTree = "<group>"; };
 		5C9ACB2522D03CCD00B59620 /* MainCoordinatorAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinatorAssembly.swift; sourceTree = "<group>"; };
 		5C9ACB2622D03CCD00B59620 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		5C9ACB2722D03CCD00B59620 /* MainCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinatorType.swift; sourceTree = "<group>"; };
@@ -323,6 +351,65 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
+		5C2DBA2822DC3442001BF6F8 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5C2DBA3422DC364A001BF6F8 /* LoginContracts.swift */,
+				5C2DBA3522DC364A001BF6F8 /* LoginViewController.swift */,
+				5C2DBA3622DC364A001BF6F8 /* LoginAssembly.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		5C2DBA2922DC34C8001BF6F8 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				5C2DBA3C22DC3661001BF6F8 /* RegistrationContracts.swift */,
+				5C2DBA3D22DC3661001BF6F8 /* RegistrationViewController.swift */,
+				5C2DBA3E22DC3661001BF6F8 /* RegistrationAssembly.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		5C2DBA2A22DC34D5001BF6F8 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				5C2DBA4B22DC82A0001BF6F8 /* Storyboards */,
+				5C2DBA2822DC3442001BF6F8 /* Login */,
+				5C2DBA2922DC34C8001BF6F8 /* Registration */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		5C2DBA4322DC36B2001BF6F8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5C8A5E9722DD75F600884EF4 /* Main.storyboard */,
+				5C8A5E9822DD75F600884EF4 /* MainContracts.swift */,
+				5C8A5E9922DD75F600884EF4 /* MainViewController.swift */,
+				5C8A5E9A22DD75F600884EF4 /* MainAssembly.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5C2DBA4422DC37B6001BF6F8 /* AuthCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				5C2DBA4522DC37E0001BF6F8 /* AuthCoordinatorAssembly.swift */,
+				5C2DBA4622DC37E0001BF6F8 /* AuthCoordinator.swift */,
+				5C2DBA4722DC37E0001BF6F8 /* AuthCoordinatorType.swift */,
+			);
+			path = AuthCoordinator;
+			sourceTree = "<group>";
+		};
+		5C2DBA4B22DC82A0001BF6F8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5C2DBA4C22DC82CD001BF6F8 /* Authentication.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		5C9ACB1722D037C100B59620 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -365,17 +452,11 @@
 		5CA2551722CE54790030D30B /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				5C2DBA2A22DC34D5001BF6F8 /* Authorization */,
+				5C2DBA4322DC36B2001BF6F8 /* Main */,
 				5C1EA2AF22CF381B00E4253D /* Onboarding */,
-				5CA2551822CE548B0030D30B /* Debug */,
 			);
 			path = Modules;
-			sourceTree = "<group>";
-		};
-		5CA2551822CE548B0030D30B /* Debug */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Debug;
 			sourceTree = "<group>";
 		};
 		5CA2551B22CE5EA00030D30B /* Assembly */ = {
@@ -399,6 +480,7 @@
 		5CA2551F22CE60740030D30B /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				5C2DBA4422DC37B6001BF6F8 /* AuthCoordinator */,
 				5C9ACB1822D03B1200B59620 /* MainCoordinator */,
 				5CA2552022CE609F0030D30B /* AppCoordinator */,
 			);
@@ -523,7 +605,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C2DBA4D22DC82CD001BF6F8 /* Authentication.storyboard in Resources */,
 				5C1EA2D422CF3EEE00E4253D /* Onboarding.storyboard in Resources */,
+				5C8A5E9B22DD75F600884EF4 /* Main.storyboard in Resources */,
 				5C12D60022C9EBAB009CE7E2 /* LaunchScreen.storyboard in Resources */,
 				5C12D5FD22C9EBAB009CE7E2 /* Assets.xcassets in Resources */,
 			);
@@ -625,21 +709,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C1EA2D722CF3EEE00E4253D /* OnboardingAssembly.swift in Sources */,
+				5C2DBA4822DC37E0001BF6F8 /* AuthCoordinatorAssembly.swift in Sources */,
 				5C10287C22CC5F7F00A4F16F /* Router.swift in Sources */,
 				5C9ACB3C22D0522100B59620 /* EnvironmentServiceAssembly.swift in Sources */,
 				5C9ACB3122D0418000B59620 /* AppCoordinator.swift in Sources */,
+				5C2DBA4122DC3661001BF6F8 /* RegistrationViewController.swift in Sources */,
 				5CD8E18C22CAFF2F008E142C /* Configuration.swift in Sources */,
 				5C1EA29122CF30E100E4253D /* Module.swift in Sources */,
 				5C10286D22CC546000A4F16F /* PushNotificationsAppDelegate.swift in Sources */,
 				5C9ACB2822D03CCD00B59620 /* MainCoordinatorAssembly.swift in Sources */,
 				5C1EA2D522CF3EEE00E4253D /* OnboardingContracts.swift in Sources */,
 				5C9ACB3D22D0522100B59620 /* EnvironmentService.swift in Sources */,
+				5C2DBA4022DC3661001BF6F8 /* RegistrationContracts.swift in Sources */,
+				5C2DBA3A22DC364A001BF6F8 /* LoginAssembly.swift in Sources */,
 				5C9ACB2922D03CCD00B59620 /* MainCoordinator.swift in Sources */,
+				5C2DBA4A22DC37E0001BF6F8 /* AuthCoordinatorType.swift in Sources */,
+				5C8A5E9E22DD75F600884EF4 /* MainAssembly.swift in Sources */,
 				5C9ACB3222D0418000B59620 /* AppCoordinatorType.swift in Sources */,
+				5C2DBA3922DC364A001BF6F8 /* LoginViewController.swift in Sources */,
 				5C10288122CC608500A4F16F /* DeepLinkOption.swift in Sources */,
 				5C1EA2D622CF3EEE00E4253D /* OnboardingViewController.swift in Sources */,
 				5C10287822CC5E4900A4F16F /* Presentable.swift in Sources */,
 				5C10286F22CC54BA00A4F16F /* LaunchAppDelegate.swift in Sources */,
+				5C2DBA4222DC3661001BF6F8 /* RegistrationAssembly.swift in Sources */,
 				5C10287122CC554400A4F16F /* ThirdPartiesConfigurationAppDelegate.swift in Sources */,
 				5C9ACB3E22D0522100B59620 /* EnvironmentServiceType.swift in Sources */,
 				5C9ACB4522D0580200B59620 /* AppConfigService.swift in Sources */,
@@ -648,9 +740,13 @@
 				5C9ACB4622D0580200B59620 /* AppConfigServiceType.swift in Sources */,
 				5C10286B22CC4D7600A4F16F /* AppDelegateManager.swift in Sources */,
 				5CA2551D22CE5EC80030D30B /* Assembly.swift in Sources */,
+				5C2DBA3822DC364A001BF6F8 /* LoginContracts.swift in Sources */,
 				5C10287E22CC604700A4F16F /* CoordinatorType.swift in Sources */,
+				5C2DBA4922DC37E0001BF6F8 /* AuthCoordinator.swift in Sources */,
+				5C8A5E9D22DD75F600884EF4 /* MainViewController.swift in Sources */,
 				5C10288322CC60D300A4F16F /* BaseCoordinator.swift in Sources */,
 				5C12D5F622C9EBA0009CE7E2 /* AppDelegate.swift in Sources */,
+				5C8A5E9C22DD75F600884EF4 /* MainContracts.swift in Sources */,
 				5C9ACB4422D0580200B59620 /* AppConfigServiceAssembly.swift in Sources */,
 				5C1EA2CF22CF3DE600E4253D /* Storyboarded.swift in Sources */,
 				5C9ACB3022D0418000B59620 /* AppCoordinatorAssembly.swift in Sources */,

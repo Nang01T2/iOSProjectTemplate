@@ -1,5 +1,5 @@
 //
-//  AppCoordinatorType.swift
+//  AuthCoordinatorType.swift
 //  {{cookiecutter.app_name}}
 //
 //  Created by {{cookiecutter.author}} on {{cookiecutter.date}}.
@@ -8,6 +8,7 @@
 
 import Foundation
 
-protocol AppCoordinatorType: CoordinatorType, Presentable {
-	
+protocol AuthCoordinatorType: CoordinatorType, Presentable {
+    var onAuthCompleted: ((String) -> Void)? { set get }
+    var onAuthCanceled: (() -> Void)? { set get }
 }

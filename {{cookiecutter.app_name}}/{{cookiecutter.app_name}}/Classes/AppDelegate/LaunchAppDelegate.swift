@@ -25,6 +25,12 @@ class LaunchAppDelegate: AppDelegateType {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        // App Config
+        let appConfig = container.resolve(AppConfigServiceAssembly.self)!.build()
+        
+        // Set defaults
+        appConfig.registerDefaults()
+        
         // Setup window
         window?.rootViewController = appCoordinator.toPresent()
         window?.backgroundColor = .white

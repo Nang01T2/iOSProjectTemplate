@@ -9,12 +9,11 @@
 import UIKit
 import Swinject
 
-class BaseCoordinator : NSObject, CoordinatorType, Presentable {
+class BaseCoordinator : CoordinatorType, Presentable {
     
     // MARK: Vars and Lets
     var childCoordinators : [CoordinatorType] = []
-    var finishFlow: (() -> Void)?
-
+    
     let router: Router
     let container: Container
     
@@ -22,6 +21,10 @@ class BaseCoordinator : NSObject, CoordinatorType, Presentable {
     init(container: Container, router: Router) {
         self.router = router
         self.container = container
+    }
+    
+    deinit {
+        print("Dealloc class: \(self)<\(Unmanaged.passUnretained(self).toOpaque())>")
     }
     
     // MARK: - Coordinator
@@ -40,14 +43,21 @@ class BaseCoordinator : NSObject, CoordinatorType, Presentable {
     
     // MARK - Helpers
     func addChild(_ coordinator: CoordinatorType) {
-        for element in childCoordinators {
-            if element === coordinator { return }
-        }
+        guard !childCoordinators.contains(where: { $0 === coordinator }) else { return }
         childCoordinators.append(coordinator)
     }
     
     func removeChild(_ coordinator: CoordinatorType?) {
         guard childCoordinators.isEmpty == false, let coordinator = coordinator else { return }
-        childCoordinators = childCoordinators.filter { $0 !== coordinator }
+        
+        // Clear child-coordinators recursively
+        if let coordinator = coordinator as? BaseCoordinator, !coordinator.childCoordinators.isEmpty {
+            coordinator.childCoordinators.filter({ $0 !== coordinator }).forEach({ coordinator.removeChild($0) })
+        }
+        
+        for (index, element) in childCoordinators.enumerated() where element === coordinator {
+            childCoordinators.remove(at: index)
+            break
+        }
     }
 }
