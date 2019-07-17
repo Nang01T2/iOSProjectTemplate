@@ -25,7 +25,8 @@ class AppCoordinator: BaseCoordinator, AppCoordinatorType {
     }
     
     private var instructor: LaunchInstructor {
-        return LaunchInstructor.configure(tutorialWasShown: onboardingWasShown, isAuthorized: !authToken.isEmpty)
+        //return LaunchInstructor.configure(tutorialWasShown: onboardingWasShown, isAuthorized: !authToken.isEmpty)
+        return .mainTabbar
     }
     
     // MARK: - Coordinator
@@ -33,14 +34,14 @@ class AppCoordinator: BaseCoordinator, AppCoordinatorType {
     override func start(with option: DeepLinkOption?) {
         if let option = option {
             switch option {
-            case .home:
-                runMainFlow()
+            case .home: runMainFlow()
             }
         } else {
             switch instructor {
             case .auth: runAuthFlow()
             case .onboarding: runOnboardingFlow()
             case .main: runMainFlow()
+            case .mainTabbar: runTabbarFlow()
             }
         }
         
@@ -81,5 +82,11 @@ class AppCoordinator: BaseCoordinator, AppCoordinatorType {
         let mainCoordinator = container.resolve(MainCoordinatorAssembly.self)!.build(router: router)
         addChild(mainCoordinator)
         mainCoordinator.start()
+    }
+    
+    private func runTabbarFlow() {
+        let tabbarCoordinator = container.resolve(TabbarCoordinatorAssembly.self)!.build(router: router)
+        addChild(tabbarCoordinator)
+        tabbarCoordinator.start()
     }
 }

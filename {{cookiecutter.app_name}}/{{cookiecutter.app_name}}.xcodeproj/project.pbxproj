@@ -42,6 +42,19 @@
 		5C8A5E9C22DD75F600884EF4 /* MainContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A5E9822DD75F600884EF4 /* MainContracts.swift */; };
 		5C8A5E9D22DD75F600884EF4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A5E9922DD75F600884EF4 /* MainViewController.swift */; };
 		5C8A5E9E22DD75F600884EF4 /* MainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A5E9A22DD75F600884EF4 /* MainAssembly.swift */; };
+		5C8A5EA322DD8B0500884EF4 /* UIColor+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A5EA222DD8B0500884EF4 /* UIColor+App.swift */; };
+		5C8A5EB022DDB25800884EF4 /* TabbarContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A5EAD22DDB25800884EF4 /* TabbarContracts.swift */; };
+		5C8A5EB122DDB25800884EF4 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A5EAE22DDB25800884EF4 /* TabbarViewController.swift */; };
+		5C8A5EB222DDB25800884EF4 /* TabbarAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A5EAF22DDB25800884EF4 /* TabbarAssembly.swift */; };
+		5C8A5EB722DDB29F00884EF4 /* TabbarCoordinatorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A5EB422DDB29E00884EF4 /* TabbarCoordinatorAssembly.swift */; };
+		5C8A5EB822DDB29F00884EF4 /* TabbarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A5EB522DDB29E00884EF4 /* TabbarCoordinator.swift */; };
+		5C8A5EB922DDB29F00884EF4 /* TabbarCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A5EB622DDB29E00884EF4 /* TabbarCoordinatorType.swift */; };
+		5C8A5EC122DDB52D00884EF4 /* TestContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A5EBD22DDB52D00884EF4 /* TestContracts.swift */; };
+		5C8A5EC222DDB52D00884EF4 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A5EBE22DDB52D00884EF4 /* TestViewController.swift */; };
+		5C8A5EC322DDB52D00884EF4 /* TestAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A5EBF22DDB52D00884EF4 /* TestAssembly.swift */; };
+		5C8A5EC922DDB53D00884EF4 /* DebugContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A5EC522DDB53D00884EF4 /* DebugContracts.swift */; };
+		5C8A5ECA22DDB53D00884EF4 /* DebugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A5EC622DDB53D00884EF4 /* DebugViewController.swift */; };
+		5C8A5ECB22DDB53D00884EF4 /* DebugAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A5EC722DDB53D00884EF4 /* DebugAssembly.swift */; };
 		5C9ACB2822D03CCD00B59620 /* MainCoordinatorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9ACB2522D03CCD00B59620 /* MainCoordinatorAssembly.swift */; };
 		5C9ACB2922D03CCD00B59620 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9ACB2622D03CCD00B59620 /* MainCoordinator.swift */; };
 		5C9ACB2A22D03CCD00B59620 /* MainCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9ACB2722D03CCD00B59620 /* MainCoordinatorType.swift */; };
@@ -117,6 +130,19 @@
 		5C8A5E9822DD75F600884EF4 /* MainContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContracts.swift; sourceTree = "<group>"; };
 		5C8A5E9922DD75F600884EF4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		5C8A5E9A22DD75F600884EF4 /* MainAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembly.swift; sourceTree = "<group>"; };
+		5C8A5EA222DD8B0500884EF4 /* UIColor+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+App.swift"; sourceTree = "<group>"; };
+		5C8A5EAD22DDB25800884EF4 /* TabbarContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarContracts.swift; sourceTree = "<group>"; };
+		5C8A5EAE22DDB25800884EF4 /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		5C8A5EAF22DDB25800884EF4 /* TabbarAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarAssembly.swift; sourceTree = "<group>"; };
+		5C8A5EB422DDB29E00884EF4 /* TabbarCoordinatorAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarCoordinatorAssembly.swift; sourceTree = "<group>"; };
+		5C8A5EB522DDB29E00884EF4 /* TabbarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarCoordinator.swift; sourceTree = "<group>"; };
+		5C8A5EB622DDB29E00884EF4 /* TabbarCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarCoordinatorType.swift; sourceTree = "<group>"; };
+		5C8A5EBD22DDB52D00884EF4 /* TestContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestContracts.swift; sourceTree = "<group>"; };
+		5C8A5EBE22DDB52D00884EF4 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		5C8A5EBF22DDB52D00884EF4 /* TestAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAssembly.swift; sourceTree = "<group>"; };
+		5C8A5EC522DDB53D00884EF4 /* DebugContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugContracts.swift; sourceTree = "<group>"; };
+		5C8A5EC622DDB53D00884EF4 /* DebugViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugViewController.swift; sourceTree = "<group>"; };
+		5C8A5EC722DDB53D00884EF4 /* DebugAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugAssembly.swift; sourceTree = "<group>"; };
 		5C9ACB2522D03CCD00B59620 /* MainCoordinatorAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinatorAssembly.swift; sourceTree = "<group>"; };
 		5C9ACB2622D03CCD00B59620 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		5C9ACB2722D03CCD00B59620 /* MainCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinatorType.swift; sourceTree = "<group>"; };
@@ -130,6 +156,7 @@
 		5C9ACB4222D0580200B59620 /* AppConfigService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigService.swift; sourceTree = "<group>"; };
 		5C9ACB4322D0580200B59620 /* AppConfigServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigServiceType.swift; sourceTree = "<group>"; };
 		5CA2551C22CE5EC80030D30B /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
+		5CD8225E22DF215B005E89E5 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		5CD8E18B22CAFF2F008E142C /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		8F0319BC5B279BBF78E2C8F8 /* Pods___cookiecutter_app_name_____cookiecutter_app_name__Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods___cookiecutter_app_name_____cookiecutter_app_name__Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E304A9DD4F769BFAE464AC3A /* Pods-{{cookiecutter.app_name}}.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-{{cookiecutter.app_name}}.development.xcconfig"; path = "Target Support Files/Pods-{{cookiecutter.app_name}}/Pods-{{cookiecutter.app_name}}.development.xcconfig"; sourceTree = "<group>"; };
@@ -273,6 +300,7 @@
 		5C12D5E922C9EBA0009CE7E2 = {
 			isa = PBXGroup;
 			children = (
+				5CD8225D22DF212E005E89E5 /* Metadata */,
 				5C12D5F422C9EBA0009CE7E2 /* {{cookiecutter.app_name}} */,
 				5C12D60922C9EBAB009CE7E2 /* {{cookiecutter.app_name}}Tests */,
 				5C12D5F322C9EBA0009CE7E2 /* Products */,
@@ -339,6 +367,7 @@
 		5C1EA2CC22CF3C2B00E4253D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				5C8A5EA122DD8AE800884EF4 /* Color */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -410,6 +439,63 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		5C8A5E9F22DD89EA00884EF4 /* Miscs */ = {
+			isa = PBXGroup;
+			children = (
+				5C8A5EBB22DDB4F900884EF4 /* Test */,
+				5C8A5EBA22DDB4C900884EF4 /* Debug */,
+			);
+			path = Miscs;
+			sourceTree = "<group>";
+		};
+		5C8A5EA122DD8AE800884EF4 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				5C8A5EA222DD8B0500884EF4 /* UIColor+App.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		5C8A5EAC22DDB22200884EF4 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				5C8A5EAD22DDB25800884EF4 /* TabbarContracts.swift */,
+				5C8A5EAE22DDB25800884EF4 /* TabbarViewController.swift */,
+				5C8A5EAF22DDB25800884EF4 /* TabbarAssembly.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		5C8A5EB322DDB28000884EF4 /* TabbarCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				5C8A5EB422DDB29E00884EF4 /* TabbarCoordinatorAssembly.swift */,
+				5C8A5EB522DDB29E00884EF4 /* TabbarCoordinator.swift */,
+				5C8A5EB622DDB29E00884EF4 /* TabbarCoordinatorType.swift */,
+			);
+			path = TabbarCoordinator;
+			sourceTree = "<group>";
+		};
+		5C8A5EBA22DDB4C900884EF4 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				5C8A5EC522DDB53D00884EF4 /* DebugContracts.swift */,
+				5C8A5EC622DDB53D00884EF4 /* DebugViewController.swift */,
+				5C8A5EC722DDB53D00884EF4 /* DebugAssembly.swift */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		5C8A5EBB22DDB4F900884EF4 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				5C8A5EBD22DDB52D00884EF4 /* TestContracts.swift */,
+				5C8A5EBE22DDB52D00884EF4 /* TestViewController.swift */,
+				5C8A5EBF22DDB52D00884EF4 /* TestAssembly.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 		5C9ACB1722D037C100B59620 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -452,8 +538,10 @@
 		5CA2551722CE54790030D30B /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				5C8A5EAC22DDB22200884EF4 /* Tabbar */,
 				5C2DBA2A22DC34D5001BF6F8 /* Authorization */,
 				5C2DBA4322DC36B2001BF6F8 /* Main */,
+				5C8A5E9F22DD89EA00884EF4 /* Miscs */,
 				5C1EA2AF22CF381B00E4253D /* Onboarding */,
 			);
 			path = Modules;
@@ -480,6 +568,7 @@
 		5CA2551F22CE60740030D30B /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				5C8A5EB322DDB28000884EF4 /* TabbarCoordinator */,
 				5C2DBA4422DC37B6001BF6F8 /* AuthCoordinator */,
 				5C9ACB1822D03B1200B59620 /* MainCoordinator */,
 				5CA2552022CE609F0030D30B /* AppCoordinator */,
@@ -496,6 +585,14 @@
 				5C1EA28D22CF2B7100E4253D /* LaunchInstructor.swift */,
 			);
 			path = AppCoordinator;
+			sourceTree = "<group>";
+		};
+		5CD8225D22DF212E005E89E5 /* Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				5CD8225E22DF215B005E89E5 /* .swiftlint.yml */,
+			);
+			name = Metadata;
 			sourceTree = "<group>";
 		};
 		A261945188EBE895D6FCFFF6 /* Frameworks */ = {
@@ -532,6 +629,7 @@
 				5C12D5EF22C9EBA0009CE7E2 /* Frameworks */,
 				5C12D5F022C9EBA0009CE7E2 /* Resources */,
 				6C3A475B7F8749B6315883D3 /* [CP] Embed Pods Frameworks */,
+				5CD8225C22DF1EAA005E89E5 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -623,6 +721,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5CD8225C22DF1EAA005E89E5 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 		6C3A475B7F8749B6315883D3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -716,16 +832,23 @@
 				5C2DBA4122DC3661001BF6F8 /* RegistrationViewController.swift in Sources */,
 				5CD8E18C22CAFF2F008E142C /* Configuration.swift in Sources */,
 				5C1EA29122CF30E100E4253D /* Module.swift in Sources */,
+				5C8A5EB122DDB25800884EF4 /* TabbarViewController.swift in Sources */,
+				5C8A5EB722DDB29F00884EF4 /* TabbarCoordinatorAssembly.swift in Sources */,
 				5C10286D22CC546000A4F16F /* PushNotificationsAppDelegate.swift in Sources */,
+				5C8A5EA322DD8B0500884EF4 /* UIColor+App.swift in Sources */,
 				5C9ACB2822D03CCD00B59620 /* MainCoordinatorAssembly.swift in Sources */,
 				5C1EA2D522CF3EEE00E4253D /* OnboardingContracts.swift in Sources */,
 				5C9ACB3D22D0522100B59620 /* EnvironmentService.swift in Sources */,
 				5C2DBA4022DC3661001BF6F8 /* RegistrationContracts.swift in Sources */,
+				5C8A5ECB22DDB53D00884EF4 /* DebugAssembly.swift in Sources */,
 				5C2DBA3A22DC364A001BF6F8 /* LoginAssembly.swift in Sources */,
 				5C9ACB2922D03CCD00B59620 /* MainCoordinator.swift in Sources */,
+				5C8A5ECA22DDB53D00884EF4 /* DebugViewController.swift in Sources */,
 				5C2DBA4A22DC37E0001BF6F8 /* AuthCoordinatorType.swift in Sources */,
+				5C8A5EC222DDB52D00884EF4 /* TestViewController.swift in Sources */,
 				5C8A5E9E22DD75F600884EF4 /* MainAssembly.swift in Sources */,
 				5C9ACB3222D0418000B59620 /* AppCoordinatorType.swift in Sources */,
+				5C8A5EC922DDB53D00884EF4 /* DebugContracts.swift in Sources */,
 				5C2DBA3922DC364A001BF6F8 /* LoginViewController.swift in Sources */,
 				5C10288122CC608500A4F16F /* DeepLinkOption.swift in Sources */,
 				5C1EA2D622CF3EEE00E4253D /* OnboardingViewController.swift in Sources */,
@@ -734,16 +857,22 @@
 				5C2DBA4222DC3661001BF6F8 /* RegistrationAssembly.swift in Sources */,
 				5C10287122CC554400A4F16F /* ThirdPartiesConfigurationAppDelegate.swift in Sources */,
 				5C9ACB3E22D0522100B59620 /* EnvironmentServiceType.swift in Sources */,
+				5C8A5EC122DDB52D00884EF4 /* TestContracts.swift in Sources */,
 				5C9ACB4522D0580200B59620 /* AppConfigService.swift in Sources */,
 				5C9ACB2A22D03CCD00B59620 /* MainCoordinatorType.swift in Sources */,
 				5C1EA28E22CF2B7100E4253D /* LaunchInstructor.swift in Sources */,
 				5C9ACB4622D0580200B59620 /* AppConfigServiceType.swift in Sources */,
+				5C8A5EB922DDB29F00884EF4 /* TabbarCoordinatorType.swift in Sources */,
 				5C10286B22CC4D7600A4F16F /* AppDelegateManager.swift in Sources */,
+				5C8A5EC322DDB52D00884EF4 /* TestAssembly.swift in Sources */,
+				5C8A5EB822DDB29F00884EF4 /* TabbarCoordinator.swift in Sources */,
+				5C8A5EB222DDB25800884EF4 /* TabbarAssembly.swift in Sources */,
 				5CA2551D22CE5EC80030D30B /* Assembly.swift in Sources */,
 				5C2DBA3822DC364A001BF6F8 /* LoginContracts.swift in Sources */,
 				5C10287E22CC604700A4F16F /* CoordinatorType.swift in Sources */,
 				5C2DBA4922DC37E0001BF6F8 /* AuthCoordinator.swift in Sources */,
 				5C8A5E9D22DD75F600884EF4 /* MainViewController.swift in Sources */,
+				5C8A5EB022DDB25800884EF4 /* TabbarContracts.swift in Sources */,
 				5C10288322CC60D300A4F16F /* BaseCoordinator.swift in Sources */,
 				5C12D5F622C9EBA0009CE7E2 /* AppDelegate.swift in Sources */,
 				5C8A5E9C22DD75F600884EF4 /* MainContracts.swift in Sources */,

@@ -9,7 +9,8 @@
 import UIKit
 
 class ThirdPartiesConfigurationAppDelegate: AppDelegateType {
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Setup third parties
         print("Third parties configuration...")
         return true

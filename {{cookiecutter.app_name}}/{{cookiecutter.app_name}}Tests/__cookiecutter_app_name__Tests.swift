@@ -9,6 +9,7 @@
 import XCTest
 @testable import __cookiecutter_app_name__
 
+// swiftlint:disable all
 class __cookiecutter_app_name__Tests: XCTestCase {
 
     override func setUp() {

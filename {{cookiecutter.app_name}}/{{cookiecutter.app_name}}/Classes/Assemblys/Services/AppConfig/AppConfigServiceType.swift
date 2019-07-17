@@ -9,8 +9,8 @@
 import Foundation
 
 enum AppConfigKey: String {
-    case authToken = "authToken"
-    case onboardingWasShown = "onboardingWasShown"
+    case authToken
+    case onboardingWasShown
     
     var value: String {
         return self.rawValue

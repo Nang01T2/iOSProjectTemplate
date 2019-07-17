@@ -10,7 +10,7 @@ import Foundation
 
 class EnvironmentService: EnvironmentServiceType {
     lazy var apiBaseURL: URL = {
-        return URL(string:Configuration.value(for: EnvironmentKey.apiBaseURL.value))!
+        return URL(string: Configuration.value(for: EnvironmentKey.apiBaseURL.value))!
     }()
     
     lazy var apiKey: String = {

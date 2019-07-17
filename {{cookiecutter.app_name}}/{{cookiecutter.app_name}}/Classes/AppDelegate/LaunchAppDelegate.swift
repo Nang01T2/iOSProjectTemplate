@@ -23,7 +23,8 @@ class LaunchAppDelegate: AppDelegateType {
         self.window = window
     }
     
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         // App Config
         let appConfig = container.resolve(AppConfigServiceAssembly.self)!.build()

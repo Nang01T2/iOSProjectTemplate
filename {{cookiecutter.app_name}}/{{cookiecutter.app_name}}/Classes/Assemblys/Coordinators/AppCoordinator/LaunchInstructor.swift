@@ -12,6 +12,7 @@ enum LaunchInstructor {
     case main
     case auth
     case onboarding
+    case mainTabbar
     
     // MARK: - Public methods
     

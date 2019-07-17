@@ -1,5 +1,5 @@
 //
-//  RegistrationContracts.swift
+//  TabbarContracts.swift
 //  {{cookiecutter.app_name}}
 //
 //  Created by {{cookiecutter.author}} on {{cookiecutter.date}}.
@@ -9,11 +9,11 @@
 import Foundation
 
 // Module Input
-protocol RegistrationModuleInput {
+protocol TabbarModuleInput {
     
 }
 
 // Module Output
-protocol RegistrationModuleOutput {
-    var onRegistrationCompleted: ((String) -> Void)? { get set }
+protocol TabbarModuleOutput {
+    
 }

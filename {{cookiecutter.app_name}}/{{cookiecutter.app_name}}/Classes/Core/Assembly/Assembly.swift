@@ -11,12 +11,11 @@ import Swinject
 
 class Assembly {
     var container: Container
-    
+
     required init(container: Container) {
         self.container = container
     }
 }
-
 
 extension Container {
     func registerAssembly<T: Assembly>(_ assembly: T.Type) {

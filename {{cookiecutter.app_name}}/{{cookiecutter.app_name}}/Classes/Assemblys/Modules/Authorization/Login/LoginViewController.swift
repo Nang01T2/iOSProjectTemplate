@@ -14,7 +14,6 @@ class LoginViewController: UIViewController, Storyboarded, LoginModuleOutput {
     var onAuthCompleted: ((String) -> Void)?
     var onRegistrationCompleted: (() -> Void)?
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Login"

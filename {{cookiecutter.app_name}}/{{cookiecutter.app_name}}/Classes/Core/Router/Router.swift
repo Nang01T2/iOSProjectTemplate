@@ -50,7 +50,7 @@ final public class Router: NSObject, Presentable {
         self.navigationController?.present(controller, animated: animated, completion: nil)
     }
     
-    public func push(_ module: Presentable?)  {
+    public func push(_ module: Presentable?) {
         self.push(module, transition: nil)
     }
     
@@ -58,11 +58,13 @@ final public class Router: NSObject, Presentable {
         self.push(module, transition: transition, animated: true)
     }
     
-    public func push(_ module: Presentable?, transition: UIViewControllerAnimatedTransitioning?, animated: Bool)  {
+    public func push(_ module: Presentable?, transition: UIViewControllerAnimatedTransitioning?, animated: Bool) {
         self.push(module, transition: transition, animated: animated, completion: nil)
     }
     
-    public func push(_ module: Presentable?, transition: UIViewControllerAnimatedTransitioning?, animated: Bool, completion: (() -> Void)?) {
+    public func push(_ module: Presentable?,
+                     transition: UIViewControllerAnimatedTransitioning?,
+                     animated: Bool, completion: (() -> Void)?) {
         self.transition = transition
         guard let controller = module?.toPresent(),
             (controller is UINavigationController == false)
@@ -74,7 +76,7 @@ final public class Router: NSObject, Presentable {
         self.navigationController?.pushViewController(controller, animated: animated)
     }
     
-    public func popModule()  {
+    public func popModule() {
         self.popModule(transition: nil)
     }
     
@@ -90,12 +92,11 @@ final public class Router: NSObject, Presentable {
     }
     
     public func popToModule(module: Presentable?, animated: Bool) {
-        if let controllers = self.navigationController?.viewControllers , let module = module {
-            for controller in controllers {
-                if controller == module as! UIViewController {
-                    self.navigationController?.popToViewController(controller, animated: animated)
-                    break
-                }
+        if let controllers = self.navigationController?.viewControllers, let module = module {
+            // swiftlint:disable force_cast
+            for controller in controllers where controller ==  module as! UIViewController {
+                self.navigationController?.popToViewController(controller, animated: animated)
+                break
             }
         }
     }
@@ -122,7 +123,9 @@ final public class Router: NSObject, Presentable {
         self.navigationController?.isNavigationBarHidden = hideBar
     }
     
-    public func setRootModule(_ module: Presentable?, transition: UIViewControllerAnimatedTransitioning?, hideBar: Bool) {
+    public func setRootModule(_ module: Presentable?,
+                              transition: UIViewControllerAnimatedTransitioning?,
+                              hideBar: Bool) {
         guard let controller = module?.toPresent() else { return }
         self.transition = transition
         self.navigationController?.setViewControllers([controller], animated: true)

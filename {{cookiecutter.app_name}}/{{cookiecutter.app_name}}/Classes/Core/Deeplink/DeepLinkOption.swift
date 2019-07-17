@@ -17,11 +17,11 @@ public enum DeepLinkOption {
         guard let url = userActivity.webpageURL else { return nil }
         guard let _ = URLComponents(url: url, resolvingAgainstBaseURL: true) else { return nil }
         
-        //TODO: parse url
+        //TODOs: parse url
         return nil
     }
     
-    static func build(with dict: [String : AnyObject]?) -> DeepLinkOption? {
+    static func build(with dict: [String: AnyObject]?) -> DeepLinkOption? {
 //        guard let screen = dict?["screen"] as? String else { return nil }
 //        //let itemID = dict?["item_id"] as? String
 //
@@ -30,7 +30,7 @@ public enum DeepLinkOption {
 //        //case DeepLinkConstants.item: return .item(itemID)
 //        default: return nil
 //        }
-        // TODO
+        //TODOs
         return nil
     }
 }

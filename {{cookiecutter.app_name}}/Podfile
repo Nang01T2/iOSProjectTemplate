@@ -8,11 +8,12 @@ def shared
   # Utilities
   pod 'SwifterSwift'
   pod 'KeychainAccess'
+  pod 'SwiftLint'
   
   # DI library
   pod 'Swinject'
   #pod 'SwinjectStoryboard'
-  pod 'SwinjectAutoregistration'
+  #pod 'SwinjectAutoregistration'
   
   # Networking
   pod 'HttpClient', :git => 'https://github.com/Nang01T2/HttpClient.git'

@@ -13,7 +13,7 @@ enum Configuration {
         guard let value = Bundle.main.infoDictionary?[key] as? T else {
             fatalError("Invalid or missing Info.plist key: \(key)")
         }
-        
+
         return value
     }
 }

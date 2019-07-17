@@ -15,5 +15,5 @@ protocol OnboardingModuleInput {
 
 // Module Output
 protocol OnboardingModuleOutput {
-    var onCompleted: (() -> Void)? { set get }
+    var onCompleted: (() -> Void)? { get set }
 }
