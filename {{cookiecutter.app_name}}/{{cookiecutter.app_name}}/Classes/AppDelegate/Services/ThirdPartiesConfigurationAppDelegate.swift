@@ -12,7 +12,7 @@ class ThirdPartiesConfigurationAppDelegate: AppDelegateService {
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Setup third parties
-        print("Third parties configuration...")
+        LogService.info("Third parties configuration...")
         return true
     }
 }

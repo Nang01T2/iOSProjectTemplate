@@ -45,7 +45,7 @@ class LaunchAppDelegate: AppDelegateService {
         guard let envConfig = dependencyManager.resolve(EnvironmentServiceAssembly.self)?.build() else {
             unableToResolve(EnvironmentServiceAssembly.self)
         }
-        print("EVN: \(envConfig.apiBaseURL)")
+        LogService.info("EVN: \(envConfig.apiBaseURL)")
         
         return true
     }
