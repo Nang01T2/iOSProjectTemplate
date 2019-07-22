@@ -8,9 +8,9 @@
 
 import UIKit
 
-class MainCoordinatorAssembly: Assembly {
+final class MainCoordinatorAssembly: ModuleAssembly {
     func build(router: Router) -> MainCoordinatorType {
-        let coordinator = MainCoordinator(container: container, router: router)
+        let coordinator = MainCoordinator(router: router)
         return coordinator
     }
 }

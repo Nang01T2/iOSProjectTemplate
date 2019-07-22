@@ -13,38 +13,17 @@ import Swinject
 class AppDelegate: AppDelegateManager {
 
     var window: UIWindow? = UIWindow()
-    lazy var container: Container = {
-        let container = Container()
-        
-        // Setup coordinators
-        container.registerAssembly(AppCoordinatorAssembly.self)
-        container.registerAssembly(AuthCoordinatorAssembly.self)
-        container.registerAssembly(MainCoordinatorAssembly.self)
-        container.registerAssembly(TabbarCoordinatorAssembly.self)
-        
-        // Setup Modules
-        container.registerAssembly(LoginAssembly.self)
-        container.registerAssembly(RegistrationAssembly.self)
-        container.registerAssembly(OnboardingAssembly.self)
-        container.registerAssembly(MainAssembly.self)
-        container.registerAssembly(TabbarAssembly.self)
-        
-        container.registerAssembly(TestAssembly.self)
-        container.registerAssembly(DebugAssembly.self)
-        
-        // Setup services
-        container.registerAssembly(EnvironmentServiceAssembly.self)
-        container.registerAssembly(AppConfigServiceAssembly.self)
-        
-        return container
-    }()
     
-    override var appDelegates: [AppDelegateType] {
+    override var services: [AppDelegateService] {
         return [
-            LaunchAppDelegate(container: container, window: window),
+            LaunchAppDelegate(window: window),
             PushNotificationsAppDelegate(),
             ThirdPartiesConfigurationAppDelegate()
         ]
+    }
+    
+    override init() {
+        AppAssembly().registerAssemblies()
     }
 
 }

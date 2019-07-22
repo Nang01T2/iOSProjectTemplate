@@ -8,9 +8,9 @@
 
 import UIKit
 
-class TabbarCoordinatorAssembly: Assembly {
+final class TabbarCoordinatorAssembly: ModuleAssembly {
     func build(router: Router) -> TabbarCoordinatorType {
-        let coordinator = TabbarCoordinator(container: container, router: router)
+        let coordinator = TabbarCoordinator(router: router)
         return coordinator
     }
 }

@@ -10,7 +10,7 @@ import UIKit
 
 typealias LoginModule = Module<LoginModuleInput, LoginModuleOutput>
 
-class LoginAssembly: Assembly {
+final class LoginAssembly: ModuleAssembly {
     func build() -> LoginModule {
         
         // View

@@ -7,16 +7,25 @@ source 'https://github.com/CocoaPods/Specs.git'
 def shared
   # Utilities
   pod 'SwifterSwift'
+  
+  # Security
   pod 'KeychainAccess'
+  
+  # Code quality
   pod 'SwiftLint'
   
-  # DI library
+  # Logging
+  pod 'CocoaLumberjack/Swift'
+  
+  # Dependency Injection
   pod 'Swinject'
   #pod 'SwinjectStoryboard'
   #pod 'SwinjectAutoregistration'
   
-  # Networking
+  # Network
   pod 'HttpClient', :git => 'https://github.com/Nang01T2/HttpClient.git'
+  
+  # Analytics, crash report
 end
 
 target '{{cookiecutter.app_name}}' do

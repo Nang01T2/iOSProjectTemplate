@@ -9,6 +9,8 @@
 import UIKit
 
 protocol CoordinatorType: AnyObject {
+    var identifier: UUID { get }
+    
     func start()
     func start(with option: DeepLinkOption?)
 }

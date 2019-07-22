@@ -10,7 +10,7 @@ import UIKit
 
 typealias OnboardingModule = Module<OnboardingModuleInput, OnboardingModuleOutput>
 
-class OnboardingAssembly: Assembly {
+final class OnboardingAssembly: ModuleAssembly {
     func build() -> OnboardingModule {
         
         // View

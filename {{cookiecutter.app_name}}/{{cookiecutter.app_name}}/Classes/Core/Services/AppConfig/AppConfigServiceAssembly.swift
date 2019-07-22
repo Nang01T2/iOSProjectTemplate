@@ -1,5 +1,5 @@
 //
-//  EnvironmentServiceAssembly.swift
+//  AppConfigServiceAssembly.swift
 //  {{cookiecutter.app_name}}
 //
 //  Created by {{cookiecutter.author}} on {{cookiecutter.date}}.
@@ -8,9 +8,9 @@
 
 import Foundation
 
-class EnvironmentServiceAssembly: Assembly {
-    func build() -> EnvironmentServiceType {
-        let service = EnvironmentService()
+final class AppConfigServiceAssembly: ModuleAssembly {
+    func build() -> AppConfigServiceType {
+        let service = AppConfigService()
         return service
     }
 }

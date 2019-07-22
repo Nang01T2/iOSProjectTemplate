@@ -10,7 +10,7 @@ import UIKit
 
 typealias DebugModule = Module<DebugModuleInput, DebugModuleOutput>
 
-class DebugAssembly: Assembly {
+final class DebugAssembly: ModuleAssembly {
     func build() -> DebugModule {
         
         // View

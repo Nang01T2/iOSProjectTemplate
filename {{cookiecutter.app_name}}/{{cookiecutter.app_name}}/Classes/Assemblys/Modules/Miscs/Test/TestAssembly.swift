@@ -10,7 +10,7 @@ import UIKit
 
 typealias TestModule = Module<TestModuleInput, TestModuleOutput>
 
-class TestAssembly: Assembly {
+final class TestAssembly: ModuleAssembly {
     func build() -> TestModule {
         
         // View

@@ -9,17 +9,16 @@
 import UIKit
 import Swinject
 
-class LaunchAppDelegate: AppDelegateType {
+class LaunchAppDelegate: AppDelegateService {
     
     var window: UIWindow?
-    let container: Container
+    let dependencyManager = DependencyManager.shared
     
     lazy var appCoordinator: AppCoordinatorType = {
-        return container.resolve(AppCoordinatorAssembly.self)!.build()
+        return dependencyManager.resolve(AppCoordinatorAssembly.self)!.build()
     }()
     
-    init(container: Container, window: UIWindow?) {
-        self.container = container
+    init(window: UIWindow?) {
         self.window = window
     }
     
@@ -27,7 +26,7 @@ class LaunchAppDelegate: AppDelegateType {
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         // App Config
-        let appConfig = container.resolve(AppConfigServiceAssembly.self)!.build()
+        let appConfig = dependencyManager.resolve(AppConfigServiceAssembly.self)!.build()
         
         // Set defaults
         appConfig.registerDefaults()
@@ -41,6 +40,12 @@ class LaunchAppDelegate: AppDelegateType {
         let notification = launchOptions?[.remoteNotification] as? [String: AnyObject]
         let deepLink = DeepLinkOption.build(with: notification)
         appCoordinator.start(with: deepLink)
+        
+        // Env config
+        guard let envConfig = dependencyManager.resolve(EnvironmentServiceAssembly.self)?.build() else {
+            unableToResolve(EnvironmentServiceAssembly.self)
+        }
+        print("EVN: \(envConfig.apiBaseURL)")
         
         return true
     }

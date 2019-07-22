@@ -11,7 +11,7 @@ import Foundation
 class AppCoordinator: BaseCoordinator, AppCoordinatorType {
     
 	private lazy var appConfig: AppConfigServiceType = {
-        return container.resolve(AppConfigServiceAssembly.self)!.build()
+        return dependencyManager.resolve(AppConfigServiceAssembly.self)!.build()
     }()
     
     private var onboardingWasShown: Bool {
@@ -25,8 +25,8 @@ class AppCoordinator: BaseCoordinator, AppCoordinatorType {
     }
     
     private var instructor: LaunchInstructor {
-        //return LaunchInstructor.configure(tutorialWasShown: onboardingWasShown, isAuthorized: !authToken.isEmpty)
-        return .mainTabbar
+        return LaunchInstructor.configure(tutorialWasShown: onboardingWasShown, isAuthorized: !authToken.isEmpty)
+        //return .mainTabbar
     }
     
     // MARK: - Coordinator
@@ -50,7 +50,7 @@ class AppCoordinator: BaseCoordinator, AppCoordinatorType {
     // MARK: - Private methods
     
     private func runAuthFlow() {
-        let authCoordinator = container.resolve(AuthCoordinatorAssembly.self)!.build(router: router)
+        let authCoordinator = dependencyManager.resolve(AuthCoordinatorAssembly.self)!.build(router: router)
         authCoordinator.onAuthCanceled = { [weak self, weak authCoordinator] in
             self?.removeChild(authCoordinator)
             self?.router.dismissModule()
@@ -70,7 +70,7 @@ class AppCoordinator: BaseCoordinator, AppCoordinatorType {
     }
     
     private func runOnboardingFlow() {
-        var onboardingModule = container.resolve(OnboardingAssembly.self)?.build()
+        var onboardingModule = dependencyManager.resolve(OnboardingAssembly.self)?.build()
         onboardingModule?.output.onCompleted = { [weak self] in
             self?.onboardingWasShown = true
             self?.start()
@@ -79,13 +79,13 @@ class AppCoordinator: BaseCoordinator, AppCoordinatorType {
     }
     
     private func runMainFlow() {
-        let mainCoordinator = container.resolve(MainCoordinatorAssembly.self)!.build(router: router)
+        let mainCoordinator = dependencyManager.resolve(MainCoordinatorAssembly.self)!.build(router: router)
         addChild(mainCoordinator)
         mainCoordinator.start()
     }
     
     private func runTabbarFlow() {
-        let tabbarCoordinator = container.resolve(TabbarCoordinatorAssembly.self)!.build(router: router)
+        let tabbarCoordinator = dependencyManager.resolve(TabbarCoordinatorAssembly.self)!.build(router: router)
         addChild(tabbarCoordinator)
         tabbarCoordinator.start()
     }

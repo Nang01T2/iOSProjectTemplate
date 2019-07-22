@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PushNotificationsAppDelegate: AppDelegateType {
+class PushNotificationsAppDelegate: AppDelegateService {
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         // Registered successfully
     }

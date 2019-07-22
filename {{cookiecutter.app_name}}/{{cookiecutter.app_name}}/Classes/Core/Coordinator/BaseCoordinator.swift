@@ -10,17 +10,22 @@ import UIKit
 import Swinject
 
 class BaseCoordinator: CoordinatorType, Presentable {
-
+    
+    /// Unique identifier
+    internal let identifier = UUID()
+    
     // MARK: Vars and Lets
-    var childCoordinators: [CoordinatorType] = []
+    
+    /// Dictionary of child coordinators
+    private var childCoordinators = [UUID: CoordinatorType]()
 
     let router: Router
-    let container: Container
+    let dependencyManager: DependencyManager
 
     // MARK: - Init
-    init(container: Container, router: Router) {
+    init(dependencyManager: DependencyManager = DependencyManager.shared, router: Router) {
         self.router = router
-        self.container = container
+        self.dependencyManager = dependencyManager
     }
 
     deinit {
@@ -34,7 +39,7 @@ class BaseCoordinator: CoordinatorType, Presentable {
     }
     
     func start(with option: DeepLinkOption?) {
-        fatalError("Children should implement `start`.")
+        fatalError("Children should be implemented the `start` method.")
     }
 
     func toPresent() -> UIViewController? {
@@ -43,21 +48,11 @@ class BaseCoordinator: CoordinatorType, Presentable {
     
     // MARK: Helpers
     func addChild(_ coordinator: CoordinatorType) {
-        guard !childCoordinators.contains(where: { $0 === coordinator }) else { return }
-        childCoordinators.append(coordinator)
+        childCoordinators[coordinator.identifier] = coordinator
     }
     
     func removeChild(_ coordinator: CoordinatorType?) {
         guard childCoordinators.isEmpty == false, let coordinator = coordinator else { return }
-        
-        // Clear child-coordinators recursively
-        if let coordinator = coordinator as? BaseCoordinator, !coordinator.childCoordinators.isEmpty {
-            coordinator.childCoordinators.filter({ $0 !== coordinator }).forEach({ coordinator.removeChild($0) })
-        }
-
-        for (index, element) in childCoordinators.enumerated() where element === coordinator {
-            childCoordinators.remove(at: index)
-            break
-        }
+        childCoordinators[coordinator.identifier] = nil
     }
 }

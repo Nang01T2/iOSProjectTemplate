@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ThirdPartiesConfigurationAppDelegate: AppDelegateType {
+class ThirdPartiesConfigurationAppDelegate: AppDelegateService {
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Setup third parties

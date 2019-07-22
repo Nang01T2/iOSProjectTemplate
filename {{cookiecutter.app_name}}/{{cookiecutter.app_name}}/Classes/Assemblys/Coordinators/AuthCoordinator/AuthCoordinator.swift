@@ -14,7 +14,7 @@ class AuthCoordinator: BaseCoordinator, AuthCoordinatorType {
     var onAuthCanceled: (() -> Void)?
     
     lazy var loginModule: LoginModule = {
-        var loginModule = container.resolve(LoginAssembly.self)?.build()
+        var loginModule = dependencyManager.resolve(LoginAssembly.self)?.build()
         loginModule?.output.onAuthCanceled = { [weak self] in
             self?.onAuthCanceled?()
         }
@@ -28,7 +28,7 @@ class AuthCoordinator: BaseCoordinator, AuthCoordinatorType {
     }()
     
     lazy var registrationModule: RegistrationModule = {
-        var registrationModule = container.resolve(RegistrationAssembly.self)?.build()
+        var registrationModule = dependencyManager.resolve(RegistrationAssembly.self)?.build()
         registrationModule?.output.onRegistrationCompleted = { [weak self] token in
             self?.onAuthCompleted?(token)
         }

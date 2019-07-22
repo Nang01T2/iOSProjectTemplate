@@ -10,7 +10,7 @@ import UIKit
 
 typealias RegistrationModule = Module<RegistrationModuleInput, RegistrationModuleOutput>
 
-class RegistrationAssembly: Assembly {
+final class RegistrationAssembly: ModuleAssembly {
     func build() -> RegistrationModule {
         
         // View

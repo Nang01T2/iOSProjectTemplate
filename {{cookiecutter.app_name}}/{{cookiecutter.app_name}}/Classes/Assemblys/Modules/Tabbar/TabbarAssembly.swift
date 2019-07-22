@@ -10,7 +10,7 @@ import UIKit
 
 typealias TabbarModule = Module<TabbarModuleInput, TabbarModuleOutput>
 
-class TabbarAssembly: Assembly {
+final class TabbarAssembly: ModuleAssembly {
     func build(with viewControllers: Presentable...) -> TabbarModule {
         
         // View

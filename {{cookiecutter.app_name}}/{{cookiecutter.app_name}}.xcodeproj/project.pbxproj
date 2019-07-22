@@ -28,6 +28,7 @@
 		5C1EA2D522CF3EEE00E4253D /* OnboardingContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1EA2D122CF3EEE00E4253D /* OnboardingContracts.swift */; };
 		5C1EA2D622CF3EEE00E4253D /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1EA2D222CF3EEE00E4253D /* OnboardingViewController.swift */; };
 		5C1EA2D722CF3EEE00E4253D /* OnboardingAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1EA2D322CF3EEE00E4253D /* OnboardingAssembly.swift */; };
+		5C2C2B3A22E5AAAA00CE7F41 /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2C2B3922E5AAAA00CE7F41 /* AppAssembly.swift */; };
 		5C2DBA3822DC364A001BF6F8 /* LoginContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2DBA3422DC364A001BF6F8 /* LoginContracts.swift */; };
 		5C2DBA3922DC364A001BF6F8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2DBA3522DC364A001BF6F8 /* LoginViewController.swift */; };
 		5C2DBA3A22DC364A001BF6F8 /* LoginAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2DBA3622DC364A001BF6F8 /* LoginAssembly.swift */; };
@@ -38,6 +39,9 @@
 		5C2DBA4922DC37E0001BF6F8 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2DBA4622DC37E0001BF6F8 /* AuthCoordinator.swift */; };
 		5C2DBA4A22DC37E0001BF6F8 /* AuthCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2DBA4722DC37E0001BF6F8 /* AuthCoordinatorType.swift */; };
 		5C2DBA4D22DC82CD001BF6F8 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C2DBA4C22DC82CD001BF6F8 /* Authentication.storyboard */; };
+		5C4F1E5D22E180EA00F67B82 /* Dictionary+Plist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F1E5C22E180EA00F67B82 /* Dictionary+Plist.swift */; };
+		5C4F1E6122E1C81100F67B82 /* Global+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F1E6022E1C81100F67B82 /* Global+Extension.swift */; };
+		5C4F1E6322E1D02A00F67B82 /* DependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F1E6222E1D02A00F67B82 /* DependencyManager.swift */; };
 		5C8A5E9B22DD75F600884EF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C8A5E9722DD75F600884EF4 /* Main.storyboard */; };
 		5C8A5E9C22DD75F600884EF4 /* MainContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A5E9822DD75F600884EF4 /* MainContracts.swift */; };
 		5C8A5E9D22DD75F600884EF4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A5E9922DD75F600884EF4 /* MainViewController.swift */; };
@@ -67,7 +71,7 @@
 		5C9ACB4422D0580200B59620 /* AppConfigServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9ACB4122D0580200B59620 /* AppConfigServiceAssembly.swift */; };
 		5C9ACB4522D0580200B59620 /* AppConfigService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9ACB4222D0580200B59620 /* AppConfigService.swift */; };
 		5C9ACB4622D0580200B59620 /* AppConfigServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9ACB4322D0580200B59620 /* AppConfigServiceType.swift */; };
-		5CA2551D22CE5EC80030D30B /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2551C22CE5EC80030D30B /* Assembly.swift */; };
+		5CA2551D22CE5EC80030D30B /* ModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2551C22CE5EC80030D30B /* ModuleAssembly.swift */; };
 		5CD8E18C22CAFF2F008E142C /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD8E18B22CAFF2F008E142C /* Configuration.swift */; };
 		F8727BA5422F17E934C1C80C /* Pods___cookiecutter_app_name__.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10FEF9997B08DF7494E2A4A2 /* Pods___cookiecutter_app_name__.framework */; };
 /* End PBXBuildFile section */
@@ -116,6 +120,7 @@
 		5C1EA2D122CF3EEE00E4253D /* OnboardingContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContracts.swift; sourceTree = "<group>"; };
 		5C1EA2D222CF3EEE00E4253D /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		5C1EA2D322CF3EEE00E4253D /* OnboardingAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingAssembly.swift; sourceTree = "<group>"; };
+		5C2C2B3922E5AAAA00CE7F41 /* AppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
 		5C2DBA3422DC364A001BF6F8 /* LoginContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContracts.swift; sourceTree = "<group>"; };
 		5C2DBA3522DC364A001BF6F8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5C2DBA3622DC364A001BF6F8 /* LoginAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAssembly.swift; sourceTree = "<group>"; };
@@ -126,6 +131,9 @@
 		5C2DBA4622DC37E0001BF6F8 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
 		5C2DBA4722DC37E0001BF6F8 /* AuthCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinatorType.swift; sourceTree = "<group>"; };
 		5C2DBA4C22DC82CD001BF6F8 /* Authentication.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
+		5C4F1E5C22E180EA00F67B82 /* Dictionary+Plist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Plist.swift"; sourceTree = "<group>"; };
+		5C4F1E6022E1C81100F67B82 /* Global+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Global+Extension.swift"; sourceTree = "<group>"; };
+		5C4F1E6222E1D02A00F67B82 /* DependencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyManager.swift; sourceTree = "<group>"; };
 		5C8A5E9722DD75F600884EF4 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		5C8A5E9822DD75F600884EF4 /* MainContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContracts.swift; sourceTree = "<group>"; };
 		5C8A5E9922DD75F600884EF4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -155,7 +163,7 @@
 		5C9ACB4122D0580200B59620 /* AppConfigServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigServiceAssembly.swift; sourceTree = "<group>"; };
 		5C9ACB4222D0580200B59620 /* AppConfigService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigService.swift; sourceTree = "<group>"; };
 		5C9ACB4322D0580200B59620 /* AppConfigServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigServiceType.swift; sourceTree = "<group>"; };
-		5CA2551C22CE5EC80030D30B /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
+		5CA2551C22CE5EC80030D30B /* ModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleAssembly.swift; sourceTree = "<group>"; };
 		5CD8225E22DF215B005E89E5 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		5CD8E18B22CAFF2F008E142C /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		8F0319BC5B279BBF78E2C8F8 /* Pods___cookiecutter_app_name_____cookiecutter_app_name__Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods___cookiecutter_app_name_____cookiecutter_app_name__Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -206,15 +214,16 @@
 		5C10286722CC4B9500A4F16F /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				5C12D61822C9F791009CE7E2 /* Configs */,
-				5C1EA2CD22CF3DCA00E4253D /* Storyboard */,
-				5C1EA28F22CF30CA00E4253D /* Module */,
-				5CA2551B22CE5EA00030D30B /* Assembly */,
 				5C10287522CC5D8900A4F16F /* AppDelegate */,
+				5C12D61822C9F791009CE7E2 /* Configs */,
 				5C10287922CC5EDA00A4F16F /* Coordinator */,
 				5C10287F22CC606800A4F16F /* Deeplink */,
+				5CA2551B22CE5EA00030D30B /* DI */,
+				5C1EA28F22CF30CA00E4253D /* Module */,
 				5C10287622CC5DFC00A4F16F /* Protocols */,
 				5C10287A22CC5F6900A4F16F /* Router */,
+				5C9ACB1722D037C100B59620 /* Services */,
+				5C1EA2CD22CF3DCA00E4253D /* Storyboard */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -222,10 +231,9 @@
 		5C10286922CC4BFB00A4F16F /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
+				5C2C2B3822E576BA00CE7F41 /* Services */,
 				5C12D5F522C9EBA0009CE7E2 /* AppDelegate.swift */,
-				5C10286E22CC54BA00A4F16F /* LaunchAppDelegate.swift */,
-				5C10286C22CC546000A4F16F /* PushNotificationsAppDelegate.swift */,
-				5C10287022CC554400A4F16F /* ThirdPartiesConfigurationAppDelegate.swift */,
+				5C2C2B3922E5AAAA00CE7F41 /* AppAssembly.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -368,6 +376,8 @@
 			isa = PBXGroup;
 			children = (
 				5C8A5EA122DD8AE800884EF4 /* Color */,
+				5C4F1E5C22E180EA00F67B82 /* Dictionary+Plist.swift */,
+				5C4F1E6022E1C81100F67B82 /* Global+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -378,6 +388,23 @@
 				5C1EA2CE22CF3DE600E4253D /* Storyboarded.swift */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		5C2C2B3722E56B0E00CE7F41 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		5C2C2B3822E576BA00CE7F41 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5C10286E22CC54BA00A4F16F /* LaunchAppDelegate.swift */,
+				5C10286C22CC546000A4F16F /* PushNotificationsAppDelegate.swift */,
+				5C10287022CC554400A4F16F /* ThirdPartiesConfigurationAppDelegate.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		5C2DBA2822DC3442001BF6F8 /* Login */ = {
@@ -501,6 +528,7 @@
 			children = (
 				5C9ACB4022D057DF00B59620 /* AppConfig */,
 				5C9ACB3F22D0546300B59620 /* Environment */,
+				5C2C2B3722E56B0E00CE7F41 /* Logger */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -547,12 +575,13 @@
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		5CA2551B22CE5EA00030D30B /* Assembly */ = {
+		5CA2551B22CE5EA00030D30B /* DI */ = {
 			isa = PBXGroup;
 			children = (
-				5CA2551C22CE5EC80030D30B /* Assembly.swift */,
+				5CA2551C22CE5EC80030D30B /* ModuleAssembly.swift */,
+				5C4F1E6222E1D02A00F67B82 /* DependencyManager.swift */,
 			);
-			path = Assembly;
+			path = DI;
 			sourceTree = "<group>";
 		};
 		5CA2551E22CE602F0030D30B /* Assemblys */ = {
@@ -560,7 +589,6 @@
 			children = (
 				5CA2551F22CE60740030D30B /* Coordinators */,
 				5CA2551722CE54790030D30B /* Modules */,
-				5C9ACB1722D037C100B59620 /* Services */,
 			);
 			path = Assemblys;
 			sourceTree = "<group>";
@@ -830,10 +858,12 @@
 				5C9ACB3C22D0522100B59620 /* EnvironmentServiceAssembly.swift in Sources */,
 				5C9ACB3122D0418000B59620 /* AppCoordinator.swift in Sources */,
 				5C2DBA4122DC3661001BF6F8 /* RegistrationViewController.swift in Sources */,
+				5C4F1E5D22E180EA00F67B82 /* Dictionary+Plist.swift in Sources */,
 				5CD8E18C22CAFF2F008E142C /* Configuration.swift in Sources */,
 				5C1EA29122CF30E100E4253D /* Module.swift in Sources */,
 				5C8A5EB122DDB25800884EF4 /* TabbarViewController.swift in Sources */,
 				5C8A5EB722DDB29F00884EF4 /* TabbarCoordinatorAssembly.swift in Sources */,
+				5C4F1E6322E1D02A00F67B82 /* DependencyManager.swift in Sources */,
 				5C10286D22CC546000A4F16F /* PushNotificationsAppDelegate.swift in Sources */,
 				5C8A5EA322DD8B0500884EF4 /* UIColor+App.swift in Sources */,
 				5C9ACB2822D03CCD00B59620 /* MainCoordinatorAssembly.swift in Sources */,
@@ -851,6 +881,7 @@
 				5C8A5EC922DDB53D00884EF4 /* DebugContracts.swift in Sources */,
 				5C2DBA3922DC364A001BF6F8 /* LoginViewController.swift in Sources */,
 				5C10288122CC608500A4F16F /* DeepLinkOption.swift in Sources */,
+				5C2C2B3A22E5AAAA00CE7F41 /* AppAssembly.swift in Sources */,
 				5C1EA2D622CF3EEE00E4253D /* OnboardingViewController.swift in Sources */,
 				5C10287822CC5E4900A4F16F /* Presentable.swift in Sources */,
 				5C10286F22CC54BA00A4F16F /* LaunchAppDelegate.swift in Sources */,
@@ -860,6 +891,7 @@
 				5C8A5EC122DDB52D00884EF4 /* TestContracts.swift in Sources */,
 				5C9ACB4522D0580200B59620 /* AppConfigService.swift in Sources */,
 				5C9ACB2A22D03CCD00B59620 /* MainCoordinatorType.swift in Sources */,
+				5C4F1E6122E1C81100F67B82 /* Global+Extension.swift in Sources */,
 				5C1EA28E22CF2B7100E4253D /* LaunchInstructor.swift in Sources */,
 				5C9ACB4622D0580200B59620 /* AppConfigServiceType.swift in Sources */,
 				5C8A5EB922DDB29F00884EF4 /* TabbarCoordinatorType.swift in Sources */,
@@ -867,7 +899,7 @@
 				5C8A5EC322DDB52D00884EF4 /* TestAssembly.swift in Sources */,
 				5C8A5EB822DDB29F00884EF4 /* TabbarCoordinator.swift in Sources */,
 				5C8A5EB222DDB25800884EF4 /* TabbarAssembly.swift in Sources */,
-				5CA2551D22CE5EC80030D30B /* Assembly.swift in Sources */,
+				5CA2551D22CE5EC80030D30B /* ModuleAssembly.swift in Sources */,
 				5C2DBA3822DC364A001BF6F8 /* LoginContracts.swift in Sources */,
 				5C10287E22CC604700A4F16F /* CoordinatorType.swift in Sources */,
 				5C2DBA4922DC37E0001BF6F8 /* AuthCoordinator.swift in Sources */,

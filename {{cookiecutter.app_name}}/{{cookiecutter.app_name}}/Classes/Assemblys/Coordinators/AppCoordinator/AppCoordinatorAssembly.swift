@@ -8,13 +8,13 @@
 
 import UIKit
 
-class AppCoordinatorAssembly: Assembly {
+final class AppCoordinatorAssembly: ModuleAssembly {
     
     func build() -> AppCoordinatorType {
         let navigationController = UINavigationController(rootViewController: UIViewController())
         let router = Router(navigationController: navigationController)
 
-        let coordinator = AppCoordinator(container: container, router: router)
+        let coordinator = AppCoordinator(router: router)
         return coordinator
     }
     

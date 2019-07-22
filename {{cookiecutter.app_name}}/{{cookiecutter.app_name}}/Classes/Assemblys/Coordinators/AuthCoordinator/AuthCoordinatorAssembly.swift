@@ -8,12 +8,12 @@
 
 import UIKit
 
-class AuthCoordinatorAssembly: Assembly {
+final class AuthCoordinatorAssembly: ModuleAssembly {
     func build(router: Router) -> AuthCoordinatorType {
 //        let navigationController = UINavigationController(rootViewController: UIViewController())
 //        let router = Router(navigationController: navigationController)
         
-        let coordinator = AuthCoordinator(container: container, router: router)
+        let coordinator = AuthCoordinator(router: router)
         
         return coordinator
     }
