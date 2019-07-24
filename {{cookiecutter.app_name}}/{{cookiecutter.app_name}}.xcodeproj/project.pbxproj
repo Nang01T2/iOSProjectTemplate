@@ -33,6 +33,7 @@
 		5C2C2B3F22E5BADE00CE7F41 /* LogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2C2B3C22E5BADE00CE7F41 /* LogService.swift */; };
 		5C2C2B4022E5BADE00CE7F41 /* LogServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2C2B3D22E5BADE00CE7F41 /* LogServiceType.swift */; };
 		5C2C2B4222E5C18900CE7F41 /* LogFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2C2B4122E5C18900CE7F41 /* LogFormatter.swift */; };
+		5C2C2B4422E5CAC700CE7F41 /* UIFont+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2C2B4322E5CAC700CE7F41 /* UIFont+App.swift */; };
 		5C2DBA3822DC364A001BF6F8 /* LoginContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2DBA3422DC364A001BF6F8 /* LoginContracts.swift */; };
 		5C2DBA3922DC364A001BF6F8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2DBA3522DC364A001BF6F8 /* LoginViewController.swift */; };
 		5C2DBA3A22DC364A001BF6F8 /* LoginAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2DBA3622DC364A001BF6F8 /* LoginAssembly.swift */; };
@@ -43,6 +44,18 @@
 		5C2DBA4922DC37E0001BF6F8 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2DBA4622DC37E0001BF6F8 /* AuthCoordinator.swift */; };
 		5C2DBA4A22DC37E0001BF6F8 /* AuthCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2DBA4722DC37E0001BF6F8 /* AuthCoordinatorType.swift */; };
 		5C2DBA4D22DC82CD001BF6F8 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C2DBA4C22DC82CD001BF6F8 /* Authentication.storyboard */; };
+		5C37A85322E803BE00CD080D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C37A84A22E803BE00CD080D /* LoadingView.swift */; };
+		5C37A85422E803BE00CD080D /* NoConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C37A84B22E803BE00CD080D /* NoConnectionView.swift */; };
+		5C37A85522E803BE00CD080D /* CellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C37A84D22E803BE00CD080D /* CellType.swift */; };
+		5C37A85622E803BE00CD080D /* BaseCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C37A84E22E803BE00CD080D /* BaseCollectionCell.swift */; };
+		5C37A85722E803BE00CD080D /* BaseCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C37A85022E803BE00CD080D /* BaseCellModel.swift */; };
+		5C37A85822E803BE00CD080D /* CellModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C37A85122E803BE00CD080D /* CellModelType.swift */; };
+		5C37A85922E803BE00CD080D /* BaseTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C37A85222E803BE00CD080D /* BaseTableCell.swift */; };
+		5C37A85C22E8047C00CD080D /* UISearchBar+TextBackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C37A85A22E8047C00CD080D /* UISearchBar+TextBackgroundColor.swift */; };
+		5C37A85D22E8047C00CD080D /* UIView+Anchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C37A85B22E8047C00CD080D /* UIView+Anchors.swift */; };
+		5C37A85F22E804C700CD080D /* BaseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C37A85E22E804C700CD080D /* BaseCollectionViewController.swift */; };
+		5C37A86922E84CCE00CD080D /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C37A86822E84CCE00CD080D /* SearchBar.swift */; };
+		5C37A86C22E84CF600CD080D /* Throttler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C37A86B22E84CF600CD080D /* Throttler.swift */; };
 		5C4F1E5D22E180EA00F67B82 /* Dictionary+Plist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F1E5C22E180EA00F67B82 /* Dictionary+Plist.swift */; };
 		5C4F1E6122E1C81100F67B82 /* Global+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F1E6022E1C81100F67B82 /* Global+Extension.swift */; };
 		5C4F1E6322E1D02A00F67B82 /* DependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4F1E6222E1D02A00F67B82 /* DependencyManager.swift */; };
@@ -129,6 +142,7 @@
 		5C2C2B3C22E5BADE00CE7F41 /* LogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogService.swift; sourceTree = "<group>"; };
 		5C2C2B3D22E5BADE00CE7F41 /* LogServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogServiceType.swift; sourceTree = "<group>"; };
 		5C2C2B4122E5C18900CE7F41 /* LogFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogFormatter.swift; sourceTree = "<group>"; };
+		5C2C2B4322E5CAC700CE7F41 /* UIFont+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+App.swift"; sourceTree = "<group>"; };
 		5C2DBA3422DC364A001BF6F8 /* LoginContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContracts.swift; sourceTree = "<group>"; };
 		5C2DBA3522DC364A001BF6F8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5C2DBA3622DC364A001BF6F8 /* LoginAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAssembly.swift; sourceTree = "<group>"; };
@@ -139,6 +153,18 @@
 		5C2DBA4622DC37E0001BF6F8 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
 		5C2DBA4722DC37E0001BF6F8 /* AuthCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinatorType.swift; sourceTree = "<group>"; };
 		5C2DBA4C22DC82CD001BF6F8 /* Authentication.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
+		5C37A84A22E803BE00CD080D /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		5C37A84B22E803BE00CD080D /* NoConnectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoConnectionView.swift; sourceTree = "<group>"; };
+		5C37A84D22E803BE00CD080D /* CellType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellType.swift; sourceTree = "<group>"; };
+		5C37A84E22E803BE00CD080D /* BaseCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionCell.swift; sourceTree = "<group>"; };
+		5C37A85022E803BE00CD080D /* BaseCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCellModel.swift; sourceTree = "<group>"; };
+		5C37A85122E803BE00CD080D /* CellModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellModelType.swift; sourceTree = "<group>"; };
+		5C37A85222E803BE00CD080D /* BaseTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableCell.swift; sourceTree = "<group>"; };
+		5C37A85A22E8047C00CD080D /* UISearchBar+TextBackgroundColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISearchBar+TextBackgroundColor.swift"; sourceTree = "<group>"; };
+		5C37A85B22E8047C00CD080D /* UIView+Anchors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Anchors.swift"; sourceTree = "<group>"; };
+		5C37A85E22E804C700CD080D /* BaseCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewController.swift; sourceTree = "<group>"; };
+		5C37A86822E84CCE00CD080D /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		5C37A86B22E84CF600CD080D /* Throttler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Throttler.swift; sourceTree = "<group>"; };
 		5C4F1E5C22E180EA00F67B82 /* Dictionary+Plist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Plist.swift"; sourceTree = "<group>"; };
 		5C4F1E6022E1C81100F67B82 /* Global+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Global+Extension.swift"; sourceTree = "<group>"; };
 		5C4F1E6222E1D02A00F67B82 /* DependencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyManager.swift; sourceTree = "<group>"; };
@@ -232,6 +258,9 @@
 				5C10287A22CC5F6900A4F16F /* Router */,
 				5C9ACB1722D037C100B59620 /* Services */,
 				5C1EA2CD22CF3DCA00E4253D /* Storyboard */,
+				5C37A86A22E84CF600CD080D /* Utils */,
+				5C37A84922E8038C00CD080D /* ViewControllers */,
+				5C37A84822E8038200CD080D /* Views */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -383,9 +412,12 @@
 		5C1EA2CC22CF3C2B00E4253D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				5C8A5EA122DD8AE800884EF4 /* Color */,
 				5C4F1E5C22E180EA00F67B82 /* Dictionary+Plist.swift */,
 				5C4F1E6022E1C81100F67B82 /* Global+Extension.swift */,
+				5C8A5EA222DD8B0500884EF4 /* UIColor+App.swift */,
+				5C2C2B4322E5CAC700CE7F41 /* UIFont+App.swift */,
+				5C37A85A22E8047C00CD080D /* UISearchBar+TextBackgroundColor.swift */,
+				5C37A85B22E8047C00CD080D /* UIView+Anchors.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -478,6 +510,53 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		5C37A84822E8038200CD080D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5C37A84C22E803BE00CD080D /* Cell */,
+				5C37A84A22E803BE00CD080D /* LoadingView.swift */,
+				5C37A84B22E803BE00CD080D /* NoConnectionView.swift */,
+				5C37A86822E84CCE00CD080D /* SearchBar.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5C37A84922E8038C00CD080D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5C37A85E22E804C700CD080D /* BaseCollectionViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5C37A84C22E803BE00CD080D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5C37A84E22E803BE00CD080D /* BaseCollectionCell.swift */,
+				5C37A85222E803BE00CD080D /* BaseTableCell.swift */,
+				5C37A84D22E803BE00CD080D /* CellType.swift */,
+				5C37A84F22E803BE00CD080D /* Models */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		5C37A84F22E803BE00CD080D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5C37A85022E803BE00CD080D /* BaseCellModel.swift */,
+				5C37A85122E803BE00CD080D /* CellModelType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5C37A86A22E84CF600CD080D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5C37A86B22E84CF600CD080D /* Throttler.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		5C8A5E9F22DD89EA00884EF4 /* Miscs */ = {
 			isa = PBXGroup;
 			children = (
@@ -485,14 +564,6 @@
 				5C8A5EBA22DDB4C900884EF4 /* Debug */,
 			);
 			path = Miscs;
-			sourceTree = "<group>";
-		};
-		5C8A5EA122DD8AE800884EF4 /* Color */ = {
-			isa = PBXGroup;
-			children = (
-				5C8A5EA222DD8B0500884EF4 /* UIColor+App.swift */,
-			);
-			path = Color;
 			sourceTree = "<group>";
 		};
 		5C8A5EAC22DDB22200884EF4 /* Tabbar */ = {
@@ -871,6 +942,7 @@
 				5C9ACB3122D0418000B59620 /* AppCoordinator.swift in Sources */,
 				5C2DBA4122DC3661001BF6F8 /* RegistrationViewController.swift in Sources */,
 				5C4F1E5D22E180EA00F67B82 /* Dictionary+Plist.swift in Sources */,
+				5C37A85F22E804C700CD080D /* BaseCollectionViewController.swift in Sources */,
 				5CD8E18C22CAFF2F008E142C /* Configuration.swift in Sources */,
 				5C1EA29122CF30E100E4253D /* Module.swift in Sources */,
 				5C8A5EB122DDB25800884EF4 /* TabbarViewController.swift in Sources */,
@@ -883,20 +955,25 @@
 				5C9ACB3D22D0522100B59620 /* EnvironmentService.swift in Sources */,
 				5C2C2B4222E5C18900CE7F41 /* LogFormatter.swift in Sources */,
 				5C2DBA4022DC3661001BF6F8 /* RegistrationContracts.swift in Sources */,
+				5C37A85822E803BE00CD080D /* CellModelType.swift in Sources */,
 				5C8A5ECB22DDB53D00884EF4 /* DebugAssembly.swift in Sources */,
 				5C2DBA3A22DC364A001BF6F8 /* LoginAssembly.swift in Sources */,
 				5C9ACB2922D03CCD00B59620 /* MainCoordinator.swift in Sources */,
 				5C8A5ECA22DDB53D00884EF4 /* DebugViewController.swift in Sources */,
+				5C37A85522E803BE00CD080D /* CellType.swift in Sources */,
 				5C2DBA4A22DC37E0001BF6F8 /* AuthCoordinatorType.swift in Sources */,
 				5C8A5EC222DDB52D00884EF4 /* TestViewController.swift in Sources */,
 				5C8A5E9E22DD75F600884EF4 /* MainAssembly.swift in Sources */,
 				5C9ACB3222D0418000B59620 /* AppCoordinatorType.swift in Sources */,
+				5C37A85922E803BE00CD080D /* BaseTableCell.swift in Sources */,
 				5C8A5EC922DDB53D00884EF4 /* DebugContracts.swift in Sources */,
+				5C37A86922E84CCE00CD080D /* SearchBar.swift in Sources */,
 				5C2DBA3922DC364A001BF6F8 /* LoginViewController.swift in Sources */,
 				5C10288122CC608500A4F16F /* DeepLinkOption.swift in Sources */,
 				5C2C2B3A22E5AAAA00CE7F41 /* AppAssembly.swift in Sources */,
 				5C1EA2D622CF3EEE00E4253D /* OnboardingViewController.swift in Sources */,
 				5C10287822CC5E4900A4F16F /* Presentable.swift in Sources */,
+				5C37A85422E803BE00CD080D /* NoConnectionView.swift in Sources */,
 				5C10286F22CC54BA00A4F16F /* LaunchAppDelegate.swift in Sources */,
 				5C2DBA4222DC3661001BF6F8 /* RegistrationAssembly.swift in Sources */,
 				5C10287122CC554400A4F16F /* ThirdPartiesConfigurationAppDelegate.swift in Sources */,
@@ -908,6 +985,7 @@
 				5C9ACB2A22D03CCD00B59620 /* MainCoordinatorType.swift in Sources */,
 				5C4F1E6122E1C81100F67B82 /* Global+Extension.swift in Sources */,
 				5C1EA28E22CF2B7100E4253D /* LaunchInstructor.swift in Sources */,
+				5C2C2B4422E5CAC700CE7F41 /* UIFont+App.swift in Sources */,
 				5C9ACB4622D0580200B59620 /* AppConfigServiceType.swift in Sources */,
 				5C8A5EB922DDB29F00884EF4 /* TabbarCoordinatorType.swift in Sources */,
 				5C10286B22CC4D7600A4F16F /* AppDelegateManager.swift in Sources */,
@@ -919,13 +997,19 @@
 				5C2C2B3F22E5BADE00CE7F41 /* LogService.swift in Sources */,
 				5C10287E22CC604700A4F16F /* CoordinatorType.swift in Sources */,
 				5C2DBA4922DC37E0001BF6F8 /* AuthCoordinator.swift in Sources */,
+				5C37A86C22E84CF600CD080D /* Throttler.swift in Sources */,
 				5C8A5E9D22DD75F600884EF4 /* MainViewController.swift in Sources */,
 				5C8A5EB022DDB25800884EF4 /* TabbarContracts.swift in Sources */,
 				5C10288322CC60D300A4F16F /* BaseCoordinator.swift in Sources */,
 				5C12D5F622C9EBA0009CE7E2 /* AppDelegate.swift in Sources */,
+				5C37A85C22E8047C00CD080D /* UISearchBar+TextBackgroundColor.swift in Sources */,
+				5C37A85622E803BE00CD080D /* BaseCollectionCell.swift in Sources */,
+				5C37A85722E803BE00CD080D /* BaseCellModel.swift in Sources */,
+				5C37A85D22E8047C00CD080D /* UIView+Anchors.swift in Sources */,
 				5C8A5E9C22DD75F600884EF4 /* MainContracts.swift in Sources */,
 				5C9ACB4422D0580200B59620 /* AppConfigServiceAssembly.swift in Sources */,
 				5C1EA2CF22CF3DE600E4253D /* Storyboarded.swift in Sources */,
+				5C37A85322E803BE00CD080D /* LoadingView.swift in Sources */,
 				5C9ACB3022D0418000B59620 /* AppCoordinatorAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
